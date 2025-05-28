@@ -1,0 +1,105 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 145px);
+  flex: 1;
+}
+.login-form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px 24px;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+}
+.login-form h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.login-form p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 55px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.login-form input::placeholder {
+  font-size: inherit;
+  color: inherit;
+}
+.login-form button {
+  padding: 10px;
+  background-color: #294245;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 55px;
+  font-size: 22px;
+  font-weight: 500;
+  width: 100%;
+}
+.error-message {
+  color: red;
+  font-weight: 500;
+  margin-bottom: 0 !important;
+}
+.tabButtons .tabItem{
+border-color: #294245;
+background-color: unset;
+color: #294245;
+}
+.tabButtons .tabItem.active{
+background-color: #294245;
+color: #fff;
+}
+@media screen and (max-width: 1680px) {
+  .login-form {
+    padding: 24px;
+    gap: 20px;
+  }
+  .login-container {
+    height: calc(100% - 80px);
+  }
+}
+@media screen and (max-width: 1370px) {
+  .login-form input {
+    height: 50px;
+    font-size: 16px;
+  }
+  .login-form button {
+    height: 50px;
+    font-size: 16px;
+  }
+  .login-form {
+    width: 400px;
+    gap: 16px;
+    padding: 24px;
+  }
+  .login-form h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 575px) {
+  .login-form {
+    width: 95%;
+    gap: 16px;
+    padding: 10px 16px 16px;
+  }
+  .login-form input {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .login-form p {
+    font-size: 14px;
+  }
+}

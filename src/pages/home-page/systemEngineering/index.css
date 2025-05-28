@@ -1,0 +1,230 @@
+.customerEngineer {
+   position: relative;
+   z-index: 1;
+   height: calc(100vh - 145px);
+   display: flex;
+   flex-direction: column;
+}
+
+.customerEngineer::before {
+   content: "";
+   background-image: url(../../../assets/images/CustomerEngineeringBg.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+}
+
+.customerEngineer .customerEngineerInner {
+   display: grid;
+   grid-template-columns: 1fr 900px;
+   padding-left: 0;
+   max-width: 80%;
+   width: 100%;
+   margin-left: auto;
+   padding-top: 35px;
+}
+
+.customerEngineer .customerEngineerInner table tr td:first-child {
+   width: 36%;
+}
+
+.customerEngineer .customerEngineerInner table tr td:last-child {
+   width: 24%;
+}
+
+.customerEngineer .customerEngineerInner table tr td {
+   width: 40%;
+   vertical-align: top;
+   line-height: 1.2;
+}
+
+.customerEngineer .customerEngineerInner table tr th:first-child {
+   width: 36%;
+}
+
+.customerEngineer .customerEngineerInner table tr th:last-child {
+   width: 24%;
+}
+
+.customerEngineer .customerEngineerInner table tr th {
+   width: 40%;
+}
+
+.customerEngineer .customerEngineerInner table {
+   border-collapse: separate;
+   border-spacing: 0 14px;
+}
+.customerEngineer .customerEngineerInner table tr td ul li::marker {
+ color: #44817D;
+}
+
+.btn05 {
+   margin-top: 50px;
+}
+
+.btn07 {
+   margin-top: 70px;
+}
+
+.btn09 {
+   position: absolute;
+   right: 23%;
+   bottom: 26%;
+}
+
+.btn10 {
+   position: absolute;
+   left: 39%;
+   bottom: 49%;
+}
+
+.btn11 {
+   position: absolute;
+   right: 9%;
+   bottom: 40%;
+}
+
+.btn12 {
+   position: absolute;
+   left: 8%;
+   top: 13%;
+}
+
+.btn19 {
+   position: absolute;
+   left: 46%;
+   bottom: 21%;
+}
+
+@media screen and (max-width: 1680px) {
+   .customerEngineer {
+      height: calc(100vh - 80px);
+   }
+
+   .customerEngineer .customerEngineerInner {
+      padding-top: 0px;
+      grid-template-columns: 1fr 800px;
+   }
+
+   .btn05 {
+      margin-top: 26px;
+   }
+
+   .btn07 {
+      margin-top: 45px;
+   }
+
+   .btn12 {
+      top: 11%;
+   }
+
+   .btn10 {
+      bottom: 47%;
+   }
+
+   .btn19 {
+      bottom: 19%;
+   }
+
+   .btn09 {
+      bottom: 24%;
+   }
+
+   .btn11 {
+      right: 8%;
+      bottom: 41%;
+   }
+}
+
+@media screen and (max-width: 1600px) {
+  
+}
+
+@media screen and (max-width: 1570px) {
+   .btn05 {
+      margin-top: 16px;
+   }
+}
+@media screen and (max-width: 1500px) {
+   .btn05 {
+      margin-top: 30px;
+   }
+}
+
+@media screen and (max-width: 1370px) {
+   .customerEngineer::before {
+      background-size: cover;
+   }
+
+   .btn12 {
+      top: 16%;
+   }
+
+   .btn05 {
+      margin-top: 50px;
+   }
+
+   .btn10 {
+      bottom: 32%;
+   }
+
+   .btn11 {
+      bottom: 22%;
+   }
+}
+
+@media screen and (max-width: 1199.98px) {
+   .customerEngineer::before {
+    display: none;
+  }
+  .customerEngineer {
+   height: auto;
+   min-height: 100vh;
+}
+  .customerEngineer .container{
+gap: 16px;
+}
+   .customerEngineer .customerEngineerInner {
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      margin-top: 50px;
+      background: #F9F9F9;
+      padding: 16px;
+   }
+
+   .customerEngineer .customerEngineerInner a {
+      position: unset;
+      margin: 0;
+   }
+}
+
+@media screen and (max-width: 575px) {
+   .customerEngineer .customerEngineerInner {
+      padding: 10px;
+   }
+
+   .customerEngineer {
+      height: auto;
+      min-height: 100vh;
+   }
+   .customerEngineer .customerEngineerInner table tr td {
+      font-size: 10px;
+      padding-left: 4px;
+        padding-right: 4px;
+  }
+   .customerEngineer .customerEngineerInner table tr th {
+      font-size: 10px;
+      
+  }
+  .customerEngineer .customerEngineerInner table {
+   border-spacing: 0 6px;
+   margin-top: 10px;
+}
+.customerEngineer .container {
+   gap: 10px;
+}
+
+}

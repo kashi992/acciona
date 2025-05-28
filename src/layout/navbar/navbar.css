@@ -1,0 +1,104 @@
+header .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 145px;
+  max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+}
+header .container::before {
+  content: "";
+  background-color: #707070;
+  position: absolute;
+  height: 2px;
+  display: none;
+}
+header .container::after {
+  content: "";
+  background-color: #707070;
+  position: absolute;
+  width: 2px;
+  height: 55px;
+  left: 65%;
+  transform: translateX(-50%);
+  bottom: 0;
+  display: none !important;
+}
+header .container .bgBottom {
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  display: flex;
+  overflow: hidden;
+}
+header .container .bgBottom span {
+  background-color: #707070;
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+  margin-left: 130px;
+  margin-right: 55px;
+}
+@media screen and (max-width: 1680px) {
+  header .container .bgBottom span {
+    margin-left: 110px;
+  }
+  header .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 80px;
+  }
+  header .headerLogos {
+    padding: 24px 0;
+  }
+  header .container::after {
+    height: 45px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  header .container .bgBottom span {
+    margin-left: 105px;
+  }
+}
+@media screen and (max-width: 1370px) {
+  header .container .bgBottom span {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1198.99px) {
+  header .container {
+    max-width: 100%;
+  }
+  header .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  header .container .bgBottom span {
+    margin-left: 65px;
+    margin-right: 18px;
+  }
+}
+@media screen and (max-width: 991.99px) {
+  header .container::before {
+    width: 90.63%;
+  }
+  header .container .bgBottom span {
+    margin-left: 55px;
+  }
+}
+@media screen and (max-width: 575px) {
+  header .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+  }
+  header .headerLogos {
+    padding: 0;
+  }
+  header .container::after {
+    display: none;
+  }
+}

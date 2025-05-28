@@ -1,0 +1,43 @@
+.dashboardWrap{
+    min-height: 100vh;
+}
+.dashboardWrap .menuSidebar {
+width: 256px;
+transform: translateX(-100%);
+transition: transform 0.5s ease-in-out;
+}
+.dashboardWrap .menuSidebar.open {
+transform: translateX(0%);
+}
+.dashboardWrap .backDrop {
+background-color: rgba(0, 0, 0, 0.5);
+position: fixed;
+width: 100%;
+height: 100%;
+z-index: 2;
+}
+.dashboardWrap .dashboardInner {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-areas: "aa aa bb bb" "cc cc cc cc" "dd dd dd dd" "ee ee ee ee"; */
+}
+.dashboardWrap table tr:last-of-type td {
+    border: 0;
+}
+.dashboardWrap .recharts-wrapper text {
+font-size: 12px;
+font-weight: 600;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .dashboardWrap .dashboardInner {
+    grid-template-columns: 1fr;
+}
+}
+@media screen and (max-width: 575px) {
+.dashboardWrap .recharts-wrapper text {
+    font-size: 10px;
+    height: 75px !important;
+    max-height: 75px !important;
+    min-height: 75px !important;
+}
+}

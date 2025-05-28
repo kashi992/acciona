@@ -1,0 +1,136 @@
+@import url(./fonts.css);
+/* $primaryFont: 'Arial';
+$secondaryFont: 'Space Grotesk'; */
+:root{
+  --primaryFont: 'Arial';
+  --secondaryFont: 'Space Grotesk';
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: var(--primaryFont);
+  }
+  .sf{
+    font-family: var(--secondaryFont);
+  }
+  body,
+  html {
+    overflow-x: clip;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:focus-visible {
+    outline: none;
+  }
+  
+  input:focus-visible {
+    outline: none;
+  }
+  
+  textarea:focus-visible {
+    outline: none;
+  }
+  select:focus-visible {
+    outline: none;
+  }
+  ul {
+    list-style: none;
+  }
+  .flex_align {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex_bt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 95%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (max-width: 1024px){
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    @media screen and (max-width: 575px){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }
+  
+  a,
+  button,
+  input[type=button],
+  input[type=submit] {
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+  }
+  
+  .slick-track{
+    display: flex;
+    align-items: center;
+  }
+  .mainWraper{
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    &::before{
+        content: "";
+        background-image: url(https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroBg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+    &::after{
+      display: none;
+        content: "";
+        background: rgba($color: #fff, $alpha: 0.7);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+  }
