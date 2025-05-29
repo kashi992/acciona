@@ -8,60 +8,48 @@ import "swiper/css/navigation"; // Import Swiper navigation styles
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import "./index.css"; // For custom styles
 import { useNavigate, useLocation } from "react-router-dom";
-
-import vision from "../../../assets/images/Vision.png";
-import visionR from "../../../assets/images/Vision-r.png";
-import safety from "../../../assets/images/Safety.png";  
-import safetyR from "../../../assets/images/Safety-r.png";  
-import methodology from "../../../assets/images/Methodology.png";
-import methodologyR from "../../../assets/images/Methodology-r.png";
-import community from "../../../assets/images/Community.png";
-import communityR from "../../../assets/images/Community-r.png";
-import sustainability from "../../../assets/images/Sustainability.png";
-import sustainabilityR from "../../../assets/images/Sustainability-r.png";
-
 const HeroSlider = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const swiperRef = useRef(null);
   const slides = [
     {
-      id: 6,
-      image: methodology,
-      imageR: methodologyR,
+      id: 1,
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Methodology.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Methodology-r.png",
       title: "Methodology",
-      path: "/construction-methodology",
+      path: "/methodology",
     },
     {
-      id: 1,
-      image: vision,
-      imageR: visionR,
+      id: 2,
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Vision.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Vision-r.png",
       title: "The Vision",
       path: "/vision",
     },
     {
-      id: 2,
-      image: safety,
-         imageR: safetyR,
+      id: 3,
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Safety.png",
+         imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Safety-r.png",
       title: "Safety",
       path: "/safety",
     },
     {
-      id: 7,
-      image: community,
-      imageR: communityR,
+      id: 4,
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Community.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Community-r.png",
       title: "Community",
       path: "/community",
     },
     {
-      id: 3,
-      image: sustainability,
-      imageR: sustainabilityR,
+      id: 5,
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Sustainability.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Sustainability-r.png",
       title: "Sustainability",
-      path: "/system-engineering",
+      path: "/sustainability",
     },
     {
-      id: 4,
+      id: 6,
         image:
         "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo5.png",
         imageR:
@@ -70,7 +58,7 @@ const HeroSlider = () => {
       path: "/sydney-metro-facility",
     },
     {
-      id: 5,
+      id: 7,
       image:
         "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo3.png",
       imageR:

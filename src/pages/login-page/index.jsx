@@ -86,7 +86,7 @@ const LoginForm = () => {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleLogin}>
-        <h2>User Login</h2>
+        <h2 className="font-bold">User Login</h2>
         <p>
           We believe in delivering Everyday Extraordinary - a solution that brings the
           'extra' and improves the lives of everyday people - every single day.

@@ -107,7 +107,7 @@ input[type=submit] {
 
 .mainWraper::before {
   content: "";
-  background-image: url(../images/heroBg.jpg);
+  background-image: url(https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/heroBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;

@@ -39,7 +39,7 @@ const hasTrackedRef = useRef(false);
             {viewState === "thumbnail" && (
                 <div className="thumbnailsView h-full relative flex flex-col justify-center container">
                      <h2 className="thumbTitle">
-                    Construction Methodology
+                    Methodology
                     </h2>
                     <div className="thumbnails _thumbnails grid relative xl:grid-cols-2 gap-8 mx-auto">
                         {/* Thumbnail 1*/}
@@ -53,7 +53,7 @@ const hasTrackedRef = useRef(false);
                             <div className="relative mx-auto w-full bg-white rounded-[10px] min[1370px]:p-3 p-2 mb-2">
                                 <img
                                     src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/ConstructionSequenceThumb+(2).jpg"
-                                    alt="Thumbnail vision Construction Methodology 1"
+                                    alt="Thumbnail Methodology 1"
                                     className="w-full min-[1680px]:h-[450px] min-[1370px]:h-[370px] xl:h-[300px] lg:h-[400px] md:h-[300px] object-cover h-[200px] thumbnailImg __thumbnailImg"
                                     
                                 />
@@ -78,7 +78,7 @@ const hasTrackedRef = useRef(false);
                             <div className="relative mx-auto w-full bg-white rounded-[10px] min[1370px]:p-3 p-2 mb-2">
                                 <img
                                     src="https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/constructionMeth2Thumb.jpg"
-                                    alt="Thumbnail Construction Methodology 2"
+                                    alt="Thumbnail Methodology 2"
                                     className="w-full min-[1680px]:h-[450px] min-[1370px]:h-[370px] xl:h-[300px] lg:h-[400px] md:h-[300px] object-cover h-[200px] thumbnailImg __thumbnailImg"
                                     
                                 />
@@ -145,7 +145,7 @@ const hasTrackedRef = useRef(false);
 
               {/* Video Title and Description */}
               <h2 className="VideoTitle">
-              Construction Methodology
+              Methodology
               </h2>
               <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]">
               

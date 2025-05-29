@@ -22,10 +22,10 @@ const Routers = () => {
     <Route path="/home" element={<HeroSlider/>} />
     <Route path="/vision" element={<Vision/>} />
     <Route path="/safety" element={<Safety/>} />
-    <Route path="/system-engineering" element={<SystemEngineering2/>} />
+    <Route path="/sustainability" element={<SystemEngineering2/>} />
     <Route path="/sydney-metro-facility" element={<SydneyMetroFacility/>} />
     <Route path="/interface-and-integration" element={<InterfaceIntegration/>} />
-    <Route path="/construction-methodology" element={<ConstructionMethodology/>} />
+    <Route path="/methodology" element={<ConstructionMethodology/>} />
     <Route path="/community" element={<Community/>} />
     <Route path="/social-inclusion" element={<SocialInclusion/>} />
     </Route>

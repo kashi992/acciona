@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { handleFirstClick, handleAllClicks } from "../../../utils/TrackFirstClick";
 import UseWatchTime from "../../../utils/UseWatchTime";
-import visionThumb from "../../../assets/images/visionThumb.jpg";
 
 const Vision = () => {
     const [viewState, setViewState] = useState("thumbnail"); // States: "thumbnail", "video"
@@ -46,7 +45,7 @@ const hasTrackedRef = useRef(false);
                         >
                             <div className="relative mx-auto w-full bg-white rounded-[10px] min[1370px]:p-3 p-2 mb-2">
                                 <img
-                                    src={visionThumb}
+                                    src="https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/VisionThumb.jpg"
                                     alt="Thumbnail vision"
                                     className="thumbnailImg w-full md:h-[350px] h-[200px] object-cover"
                                 />
@@ -80,7 +79,7 @@ const hasTrackedRef = useRef(false);
                             className="w-full h-full custom-video-player"
                             src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/THE_VISION.mp4+(1).mp4"
                             controls
-                            poster="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/visionThumb2.jpg"
+                            poster="https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/VisionThumb.jpg"
                         />
                         {!isPlaying && (
                             <div className={`absolute top-0 right-0 left-0 bottom-0 h-ull w-full flex flex-col`}
