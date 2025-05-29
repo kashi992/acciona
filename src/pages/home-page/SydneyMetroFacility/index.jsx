@@ -36,31 +36,20 @@ UseWatchTime(videoRef, "SydneyVideo", viewState === "video");
     <>
       {viewState === "thumbnail" && (
         <div className="thumbnailsView h-full relative flex flex-col justify-center container">
-          <div className="thumbnails grid relative grid-cols-1 gap-8 items-center mx-auto">
-            {/* Back Button */}
-            <div
-              className="backButton absolute top-0 right-0 md:translate-x-[150%] md:translate-y-[0%] translate-y-[-150%] flex items-center justify-end cursor-pointer"
-              onClick={() =>
-                navigate("/home", { state: { returnToSlide: fromSlideIndex } })
-              }
-            >
-              <img
-                src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/crossIcon.png"
-                alt="Back"
-                className="min-[1680px]:w-[80px] min-[1680px]:h-[80px] min-[1370px]:h-[50px] min-[1370px]:w-[50px] w-[40px] h-[40px] rounded-full"
-              />
-            </div>
-
+          <h2 className="thumbTitle">
+            Connecting with Country
+          </h2>
+          <div className="thumbnails grid relative grid-cols-1 items-center mx-auto">
             {/* Thumbnail */}
             <div
               className={`thumbnail cursor-pointer`}
               onClick={() => setViewState("video")}
             >
-              <div className="relative mx-auto w-full">
+              <div className="relative mx-auto w-full bg-white rounded-[10px] min[1370px]:p-3 p-2 mb-2">
                 <img
                   src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/SydneyMetroThumb2+(2).jpg"
                   alt="Thumbnail vision"
-                  className="w-full min-[1680px]:h-[600px] min-[1370px]:h-[450px] md:h-[350px] h-[200px] object-cover"
+                  className="thumbnailImg w-full md:h-[350px] h-[200px] object-cover"
                 />
                 <img
                   src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/playBtn.png"
@@ -72,10 +61,15 @@ UseWatchTime(videoRef, "SydneyVideo", viewState === "video");
                 A 3D Animation of the Sydney Metro Facility in Clyde.
               </p>
             </div>
+                {/* Back Button */}
+                        <button
+                            className="backButton cursor-pointer"
+                            onClick={() => navigate("/home", { state: { returnToSlide: fromSlideIndex } })}
+                        >
+                         Main Menu 
+                        </button>
           </div>
-          <h2 className="min-[1680px]:text-[40px] min-[1370px]:text-[30px] text-[20px] text-[#4ec0b0] md:text-3xl text-xl font-bold text-center min-[1600px]:mt-6 min-[1370px]:mt-4 lg:mt-3 mt-4">
-            Connecting with Country
-          </h2>
+          
         </div>
       )}
 
@@ -110,13 +104,13 @@ UseWatchTime(videoRef, "SydneyVideo", viewState === "video");
               <img
                 src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/crossIcon.png"
                 alt="Back"
-                className="min-[1680px]:w-[80px] min-[1680px]:h-[80px] min-[1370px]:h-[50px] min-[1370px]:w-[50px] w-[40px] h-[40px] rounded-full"
+                className="min-[1680px]:w-[80px] min-[1680px]:h-[80px] min-[1370px]:h-[50px] min-[1370px]:w-[50px] w-[40px] h-[40px] rounded-full cursor-pointer"
               />
             </button>
           </div>
 
           {/* Video Title and Description */}
-          <h2 className="sf min-[1370px]:text-4xl text-2xl text-center font-semibold min-[1370px]:mt-6 mt-2 min-[1370px]:mb-3 mb-1 text-[#50beb1]">
+          <h2 className="VideoTitle">
             Sydney Metro Facility
           </h2>
           <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]"></p>

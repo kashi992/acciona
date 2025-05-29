@@ -85,32 +85,8 @@ const LoginForm = () => {
 
   return (
     <div className="login-container">
-
-
       <form className="login-form" onSubmit={handleLogin}>
-        <div className="tabButtons grid grid-cols-2 mb-3">
-          <button
-            className={`tabItem ${activeTab === "user" ? "active" : ""}`}
-            onClick={() => {
-              setActiveTab("user");
-              setCredentials({ username: "", password: "" }); // Clear input fields
-              setError("");
-            }}
-          >
-            User
-          </button>
-          <button
-            className={`tabItem ${activeTab === "admin" ? "active" : ""}`}
-            onClick={() => {
-              setActiveTab("admin");
-              setCredentials({ username: "", password: "" }); // Clear input fields
-              setError("");
-            }}
-          >
-            Admin
-          </button>
-        </div>
-        <h2>{activeTab === "admin" ? "Admin Login" : "User Login"}</h2>
+        <h2>User Login</h2>
         <p>
           We believe in delivering Everyday Extraordinary - a solution that brings the
           'extra' and improves the lives of everyday people - every single day.

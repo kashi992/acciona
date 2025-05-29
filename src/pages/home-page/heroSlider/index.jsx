@@ -9,35 +9,62 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import "./index.css"; // For custom styles
 import { useNavigate, useLocation } from "react-router-dom";
 
+import vision from "../../../assets/images/Vision.png";
+import visionR from "../../../assets/images/Vision-r.png";
+import safety from "../../../assets/images/Safety.png";  
+import safetyR from "../../../assets/images/Safety-r.png";  
+import methodology from "../../../assets/images/Methodology.png";
+import methodologyR from "../../../assets/images/Methodology-r.png";
+import community from "../../../assets/images/Community.png";
+import communityR from "../../../assets/images/Community-r.png";
+import sustainability from "../../../assets/images/Sustainability.png";
+import sustainabilityR from "../../../assets/images/Sustainability-r.png";
+
 const HeroSlider = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const swiperRef = useRef(null);
   const slides = [
     {
+      id: 6,
+      image: methodology,
+      imageR: methodologyR,
+      title: "Methodology",
+      path: "/construction-methodology",
+    },
+    {
       id: 1,
-      image:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo1.png",
+      image: vision,
+      imageR: visionR,
       title: "The Vision",
       path: "/vision",
     },
     {
       id: 2,
-      image:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo4.png",
+      image: safety,
+         imageR: safetyR,
       title: "Safety",
       path: "/safety",
     },
     {
+      id: 7,
+      image: community,
+      imageR: communityR,
+      title: "Community",
+      path: "/community",
+    },
+    {
       id: 3,
-      image:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo6.png",
-      title: "Systems Engineering",
+      image: sustainability,
+      imageR: sustainabilityR,
+      title: "Sustainability",
       path: "/system-engineering",
     },
     {
       id: 4,
         image:
+        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo5.png",
+        imageR:
         "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo5.png",
       title: "Sydney Metro Facility",
       path: "/sydney-metro-facility",
@@ -46,27 +73,16 @@ const HeroSlider = () => {
       id: 5,
       image:
         "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo3.png",
+      imageR:
+        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo3.png",
       title: "Interface and Integration",
       path: "/interface-and-integration",
     },
     {
-      id: 6,
-      image:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo2.png",
-      title: "Construction Methodology",
-      path: "/construction-methodology",
-    },
-
-    {
-      id: 7,
-      image:
-      "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo4.png",
-      title: "Community",
-      path: "/community",
-    },
-    {
       id: 8,
       image:
+        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo6.png",
+      imageR:
         "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo6.png",
       title: "Social Inclusion",
       path: "/social-inclusion",
@@ -87,6 +103,7 @@ const HeroSlider = () => {
   return (
     <section className="heroWrap">
       <div className="container">
+        <h1> 2025 INTERACTIVE BID PORTAL </h1>
         <Swiper
           ref={swiperRef}
           grabCursor={true}
@@ -144,10 +161,11 @@ const HeroSlider = () => {
               }
             >
               <div className="sliderContent">
-                <h2 className="sf">{slide.title}</h2>
                 <div className="slideImg">
-                  <img src={slide.image} alt={`Slide ${slide.id}`} />
+                  <img className="slideImgN" src={slide.image} alt={`Slide ${slide.id}`} />
+                  <img className="slideImgR" src={slide.imageR} alt={`Slide ${slide.id}`} />
                 </div>
+                <h2 className="sf">{slide.title}</h2>
               </div>
             </SwiperSlide>
           ))}

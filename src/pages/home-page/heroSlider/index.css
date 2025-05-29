@@ -5,12 +5,22 @@
   position: relative;
   flex: 1;
 }
+
 .heroWrap .container {
   min-height: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
+.heroWrap h1 {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .heroSwiper {
   width: 100%;
   height: 100%;
@@ -21,64 +31,72 @@
   justify-content: center;
   flex: 1;
 }
+
 .heroSwiper .slideImg {
-  width: 190px;
-  height: 190px;
+  width: 200px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
 }
-.heroSwiper .slideImg::before {
-  content: "";
-  background-color: #377b7a;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 50%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
+
+.heroSwiper .slideImg .slideImgR {
+  display: none;
 }
+
+.heroSwiper .swiper-slide .sliderContent:hover .slideImgN {
+  display: none;
+}
+
+.heroSwiper .swiper-slide .sliderContent:hover .slideImgR {
+  display: block;
+}
+
 .heroSwiper .slideImg:hover::before {
   opacity: 0.5;
   visibility: visible;
 }
+
 .heroSwiper .slideImg img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
+
 .heroSwiper .swiper-slide {
   align-content: center;
 }
+
 .heroSwiper .swiper-slide:last-child .slideImg:hover::before {
   display: none;
 }
+
 .heroSwiper .swiper-slide:last-child .slideImg::before {
   display: none;
 }
+
 .heroSwiper .swiper-slide:last-child .slideImg img {
   border-radius: 0;
 }
+
 .heroSwiper .swiper-slide .sliderContent {
   transition: transform 0.6s ease;
   cursor: pointer;
   display: grid;
-  gap: 15px;
+  gap: 20px;
 }
+
 .heroSwiper .swiper-slide .sliderContent:hover {
   transform: scale(1.4);
 }
+
 .heroSwiper .swiper-slide .sliderContent:hover .slideImg::before {
   opacity: 0.5;
   visibility: visible;
 }
+
 .heroSwiper .swiper-slide h2 {
   font-size: 30px;
   line-height: 1.2;
@@ -86,38 +104,59 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  min-height: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-weight: 600;
+  font-weight: 700;
+  color: #fff;
 }
+
 .heroSwiper .swiper-wrapper {
   justify-content: space-between;
 }
+
 .heroSwiper .swiper-button-prev,
 .heroSwiper .swiper-button-next {
-  color: #000;
+  color: #fff;
   z-index: 9;
   margin: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 50px;
+  top: auto;
+  padding: 40px;
+  background-color: #e20714;
+  border-radius: 50%;
 }
+
+.heroSwiper .swiper-button-prev {
+  left: 46.5%;
+  transform: translateX(-50%);
+}
+
+.heroSwiper .swiper-button-next {
+  right: 46.5%;
+  transform: translateX(50%);
+}
+
 .heroSwiper .swiper-button-prev::after,
 .heroSwiper .swiper-button-next::after {
-  font-size: 50px;
+  font-size: 35px;
 }
+
 .heroSwiper .swiper-pagination-bullet {
   margin: 0 10px !important;
   width: 20px;
   height: 20px;
 }
+
 .heroSwiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #000;
 }
+
 .heroSwiper .swiper-pagination {
   bottom: 30px;
+  display: none !important;
 }
+
 .custom-video-container {
   text-align: center;
   visibility: hidden;
@@ -125,6 +164,7 @@
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
 }
+
 .custom-video-container.__video {
   visibility: visible;
   opacity: 1;
@@ -138,6 +178,7 @@
   z-index: 3;
   transition: transform 0.5s ease-in-out;
 }
+
 .custom-video-container.__video::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
@@ -150,6 +191,7 @@
   bottom: 0;
   z-index: -1;
 }
+
 .video-thumbnail {
   position: relative;
   display: flex;
@@ -158,10 +200,12 @@
   cursor: pointer;
   width: 100%;
 }
+
 .video-thumbnail img {
   width: 100%;
   height: auto;
 }
+
 .play-button {
   position: absolute;
   cursor: pointer;
@@ -173,11 +217,13 @@
   justify-content: center;
   top: 0;
 }
+
 .play-button img {
   width: 110px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .video-element {
   width: 70%;
   height: auto;
@@ -187,6 +233,7 @@
   margin: auto;
   aspect-ratio: 1.7777777778;
 }
+
 .close-button {
   background: #294245;
   color: #fff;
@@ -204,10 +251,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .videoView {
   position: relative;
   z-index: 1;
 }
+
 .videoView::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
@@ -218,6 +267,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 .thumbnailsView {
   display: flex;
   justify-content: center;
@@ -227,6 +277,15 @@
   z-index: 1;
   padding: 0 40px;
 }
+
+.thumbnailsView h2.thumbTitle {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .thumbnailsView::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
@@ -237,6 +296,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 .thumbnailsView .thumbnail.thumbnail_one {
   grid-column: 1/3;
   max-width: 1150px;
@@ -244,163 +304,383 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .thumbnailsView .thumbnail.thumbnail_one .thumbImg {
   max-width: 100%;
   width: 100%;
 }
+
+.backButton {
+  background-color: #e20714;
+  width: 252px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 1/3;
+}
+
 .videoView {
   display: flex;
   justify-content: center;
   flex: 1;
   flex-direction: column;
 }
+
 .thumbnails {
   max-width: 1000px;
   width: 100%;
-  margin-left: auto;margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 40px 0;
 }
+
 .thumbnails._thumbnails {
   max-width: 90%;
+  column-gap: 40px;
 }
-.thumbnails img{
- object-fit: fill;
+
+.thumbnails img {
+  object-fit: fill;
 }
+
+.VideoTitle {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+  .thumbnailsView .thumbnail .thumbnailImg {
+    height: 530px;
+  }
+
+  .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
+    height: 450px;
+  }
 @media screen and (max-width: 1680px) {
   .thumbnails {
     max-width: 780px;
-}
+  }
+
   .heroSwiper .slideImg {
     width: 170px;
     height: 170px;
   }
+
   .thumbnailsView .thumbnail.thumbnail_one .thumbImg {
     height: 450px;
     object-fit: contain;
   }
+
   .heroSwiper .swiper-button-prev::after,
   .heroSwiper .swiper-button-next::after {
     font-size: 40px;
   }
+
   .heroWrap {
     height: calc(100% - 80px);
   }
+
   .heroSwiper .swiper-slide h2 {
     font-size: 24px;
-    min-height: 55px;
   }
+
   .custom-video-container.__video {
     padding: 3% 0;
   }
+
   .video-element {
     width: 55%;
   }
 }
+
 @media screen and (max-width: 1600px) {
   .heroSwiper .swiper-slide h2 {
     font-size: 20px;
   }
+
+  .heroWrap h1 {
+    font-size: 44px;
+  }
+
+  .heroSwiper .swiper-button-prev,
+  .heroSwiper .swiper-button-next {
+    bottom: 30px;
+    padding: 35px;
+  }
+
+  .heroSwiper .swiper-button-prev::after,
+  .heroSwiper .swiper-button-next::after {
+    font-size: 24px;
+  }
+
+  .thumbnailsView h2.thumbTitle {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .backButton {
+    width: 210px;
+    height: 65px;
+    font-size: 26px;
+  }
+
+  .thumbnails {
+    gap: 24px 0;
+  }
+
+  .VideoTitle {
+    font-size: 35px;
+  }
+   .thumbnailsView .thumbnail .thumbnailImg {
+    height: 450px;
+  }
+
+  .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
+    height: 370px;
+  }
+.thumbnails._thumbnails {
+    column-gap: 24px;
 }
+}
+
 @media screen and (max-width: 1570px) {
   .heroSwiper .slideImg {
     width: 150px;
     height: 150px;
   }
+
+  .heroSwiper .swiper-button-prev,
+  .heroSwiper .swiper-button-next {
+    bottom: 20px;
+    padding: 30px;
+  }
+
+  .heroSwiper .swiper-button-next {
+    right: 47%;
+  }
+  .heroSwiper .swiper-button-prev {
+    left: 47%;
+  }
+      .heroWrap h1 {
+        font-size: 36px;
+    }
+          .thumbnails {
+        max-width: 700px;
+    }
+        .thumbnailsView .thumbnail .thumbnailImg {
+        height: 350px;
+    }
+        .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
+        height: 320px;
+    }
+        .backButton {
+        width: 180px;
+        height: 60px;
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 1370px) {
-  .thumbnails {
-    max-width: 620px;
-}
+      header .logBTn {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+      .thumbnails {
+        max-width: 600px;
+    }
   .thumbnailsView .thumbnail.thumbnail_one .thumbImg {
     height: 360px;
   }
-  .heroSwiper .swiper-slide h2 {
-    min-height: 45px;
-  }
+
   .play-button img {
     width: 80px;
   }
+
   .close-button {
     width: 175px;
     height: 50px;
     font-size: 18px;
   }
+      .heroWrap h1 {
+        font-size: 30px;
+    }
+        .backButton {
+               width: 130px;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+        .heroSwiper .slideImg {
+        width: 130px;
+        height: 130px;
+    }
+        .heroSwiper .swiper-button-prev, .heroSwiper .swiper-button-next {
+        padding: 24px;
+    }
+        .heroSwiper .swiper-button-prev::after, .heroSwiper .swiper-button-next::after {
+        font-size: 18px;
+    }
+        .thumbnailsView .thumbnail .thumbnailImg {
+        height: 300px;
+        }
+            .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
+        height: 285px;
+    }
+        .thumbnailsView h2.thumbTitle {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+    .thumbnails._thumbnails {
+        column-gap: 16px;
+    }
+      .VideoTitle {
+    font-size: 26px;
+        margin-top: 8px;
+    margin-bottom: 0px;
+  }
 }
+
 @media screen and (max-width: 1198.99px) {
-  .thumbnails._thumbnails {
-    max-width: 83%;
+      .backButton {
+    grid-column: auto;
+    }
+.thumbnails._thumbnails {
+    max-width: 80%;
 }
+    .heroSwiper .swiper-button-next {
+        right: 46%;
+    }
+    .heroSwiper .swiper-button-prev {
+        left: 46%;
+    }
   .thumbnailsView .thumbnail.thumbnail_one .thumbImg {
     height: 100%;
     width: 100%;
   }
+
   .thumbnailsView {
     padding: 0 15px;
   }
+
   .videoView {
     padding: 0 15px;
   }
+
   .video-element {
     width: 95%;
   }
+
   .custom-video-container.__video {
     height: fit-content;
     margin: auto;
   }
+
   .custom-video-container.__video::before {
     width: 100vw;
     height: 1000vh;
     top: -100%;
   }
-  .heroSwiper .swiper-slide .sliderContent {
-    display: grid;
-    grid-template-rows: 55px 1fr;
-    align-items: center;
-    gap: 6px;
-  }
+
   .heroSwiper .swiper-slide h2 {
-    min-height: auto;
     justify-content: end;
   }
 }
+
 @media screen and (max-width: 991.99px) {
+      .heroWrap h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+        header .container {
+        height: 70px;
+    }
+      header .logBTn {
+        font-size: 16px;
+        padding: 15px 22px;
+    }
+      header {
+        border-left-width: 8px;
+        border-right-width: 8px;
+    }
   .heroSwiper .slideImg {
     width: 100px;
     height: 100px;
-}
+  }
+
   .heroSwiper .swiper-slide h2 {
-    min-height: auto;
     font-size: 16px;
   }
+
   .heroSwiper {
     padding: 0 60px;
+  }
+    .heroSwiper .swiper-button-next {
+        right: 45%;
+    }
+    .heroSwiper .swiper-button-prev {
+        left: 45%;
+    }
 }
 
-}
 @media screen and (max-width: 575px) {
+      header .logBTn {
+        font-size: 15px;
+        padding: 12px 18px;
+        position: unset;
+    }
+        header .container {
+        justify-content: space-between;
+    }
   .thumbnails._thumbnails {
     max-width: 100%;
-}
+  }
+
   .videoView {
     padding: 0 10px;
-}
+  }
+
   .play-button img {
     width: 55px;
   }
+
   .heroWrap {
     height: calc(100% - 70px);
   }
+
   .heroSwiper .swiper-slide h2 {
     font-size: 20px;
   }
+
   .thumbnailsView {
     padding: 75px 10px;
   }
+
   .heroSwiper {
     padding: 0 30px;
   }
+
   .heroSwiper .swiper-button-prev::after,
   .heroSwiper .swiper-button-next::after {
-    font-size: 20px;
+    font-size: 14px;
   }
+      .heroSwiper .swiper-button-prev, .heroSwiper .swiper-button-next {
+        padding: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .heroSwiper .swiper-button-prev {
+        left: 42%;
+    }
+    .heroSwiper .swiper-button-next {
+        right: 42%;
+    }
 }
