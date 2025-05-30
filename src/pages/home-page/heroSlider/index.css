@@ -490,10 +490,6 @@
 }
 
 @media screen and (max-width: 1370px) {
-      header .logBTn {
-        font-size: 16px;
-        padding: 14px 24px;
-    }
       .thumbnails {
         max-width: 600px;
     }
@@ -603,10 +599,6 @@
         header .container {
         height: 70px;
     }
-      header .logBTn {
-        font-size: 16px;
-        padding: 15px 22px;
-    }
       header {
         border-left-width: 8px;
         border-right-width: 8px;
@@ -632,11 +624,6 @@
 }
 
 @media screen and (max-width: 575px) {
-      header .logBTn {
-        font-size: 15px;
-        padding: 12px 18px;
-        position: unset;
-    }
         header .container {
         justify-content: space-between;
     }

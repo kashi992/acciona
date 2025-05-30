@@ -11,8 +11,8 @@ const LoginForm = () => {
   // Credentials
   const correctAdminUsername = "info@admin";
   const correctAdminPassword = "linewidepanel";
-  const correctUsername = "cpbugljv";
-  const correctPassword = "rs9";
+  const correctUsername = "accionajv";
+  const correctPassword = "nztana";
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -109,7 +109,7 @@ const LoginForm = () => {
           }
           required
         />
-        <button type="submit">Login</button>
+        <button className="" type="submit">Login</button>
         {error && <p className="error-message">{error}</p>}
       </form>
     </div>

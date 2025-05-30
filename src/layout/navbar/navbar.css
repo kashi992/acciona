@@ -49,6 +49,7 @@ header .logBTn{
     font-size: 24px;
     padding: 24px 40px;
     border-radius: 40px;
+    background-color: #e20714;
 }
 @media screen and (max-width: 1680px) {
   header .container .bgBottom span {
@@ -92,6 +93,10 @@ header .logBTn {
         height: 80px;
         padding: 8px;
     }
+        header .logBTn {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
 }
 @media screen and (max-width: 1198.99px) {
   header .container {
@@ -107,6 +112,10 @@ header .logBTn {
   }
 }
 @media screen and (max-width: 991.99px) {
+     header .logBTn {
+        font-size: 16px;
+        padding: 15px 22px;
+    }
   header .container::before {
     width: 90.63%;
   }
@@ -115,6 +124,11 @@ header .logBTn {
   }
 }
 @media screen and (max-width: 575px) {
+     header .logBTn {
+        font-size: 15px;
+        padding: 12px 18px;
+        position: unset;
+    }
   header .container {
     padding-top: 15px;
     padding-bottom: 15px;
