@@ -80,9 +80,9 @@ UseWatchTime(videoRef, "SydneyVideo", viewState === "video");
             <video
               ref={videoRef}
               className="w-full h-full custom-video-player"
-              src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/Sydney_Metro_Facility_FlyThrough_2+(3).mp4"
+              src=""
               controls
-              poster="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/SydneyMetroThumb2+(2).jpg"
+              poster=""
             />
             {!isPlaying && (
               <div

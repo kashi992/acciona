@@ -111,14 +111,14 @@ const hasTrackedRef = useRef(false);
                       className="w-full h-full custom-video-player"
                       src={
                           selectedVideo === 1
-                              ? "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/Construction_Meth_250325_v4_1_1+(1).mp4"
-                              : "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/Jess_con_meth_Final_250325.mp4"
+                              ? ""
+                              : ""
                       }
                       controls
                       poster={
                         selectedVideo === 1
-                            ? "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/ConstructionSequenceThumb+(2).jpg"
-                            : "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/constructionMeth2Thumb.jpg"
+                            ? ""
+                            : ""
                     }
                   />
                   {!isPlaying && (
