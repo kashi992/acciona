@@ -15,24 +15,24 @@ const HeroSlider = () => {
   const slides = [
     {
       id: 1,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Methodology",
-      path: "/methodology",
-    },
-    {
-      id: 2,
          image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
       title: "The Vision",
       path: "/vision",
     },
     {
+      id: 2,
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
+      title: "Construction Methodology",
+      path: "/construction-methodology",
+    },
+    {
       id: 3,
     image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Safety",
-      path: "/safety",
+      title: "Our Finance Model",
+      path: "/finance-model",
     },
     {
       id: 4,
@@ -52,23 +52,23 @@ const HeroSlider = () => {
       id: 6,
           image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Sydney Metro Facility",
-      path: "/sydney-metro-facility",
+      title: "The future",
+      path: "/the-future",
     },
-    {
-      id: 7,
-         image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Interface and Integration",
-      path: "/interface-and-integration",
-    },
-    {
-      id: 8,
-       image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Social Inclusion",
-      path: "/social-inclusion",
-    },
+    // {
+    //   id: 7,
+    //      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
+    //   imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
+    //   title: "Interface and Integration",
+    //   path: "/interface-and-integration",
+    // },
+    // {
+    //   id: 8,
+    //    image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
+    //   imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
+    //   title: "Social Inclusion",
+    //   path: "/social-inclusion",
+    // },
   ];
 
   const handleSlideClick = (slide) => {
