@@ -15,63 +15,57 @@ const HeroSlider = () => {
   const slides = [
     {
       id: 1,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Methodology.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Methodology-r.png",
+      image: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon+(2).png",
       title: "Methodology",
       path: "/methodology",
     },
     {
       id: 2,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Vision.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Vision-r.png",
+         image: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon+(2).png",
       title: "The Vision",
       path: "/vision",
     },
     {
       id: 3,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Safety.png",
-         imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Safety-r.png",
+    image: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon+(2).png",
       title: "Safety",
       path: "/safety",
     },
     {
       id: 4,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Community.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Community-r.png",
+    image: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon+(2).png",
       title: "Community",
       path: "/community",
     },
     {
       id: 5,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Sustainability.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Sustainability-r.png",
+      image: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon+(2).png",
       title: "Sustainability",
       path: "/sustainability",
     },
     {
       id: 6,
-        image:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo5.png",
-        imageR:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo5.png",
+          image: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon+(2).png",
       title: "Sydney Metro Facility",
       path: "/sydney-metro-facility",
     },
     {
       id: 7,
-      image:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo3.png",
-      imageR:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo3.png",
+         image: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon+(2).png",
       title: "Interface and Integration",
       path: "/interface-and-integration",
     },
     {
       id: 8,
-      image:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo6.png",
-      imageR:
-        "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/heroLogo6.png",
+       image: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon-black.png",
+      imageR: "https://cpb-uglsolution-videos.s3.us-east-1.amazonaws.com/acciona/favicon+(2).png",
       title: "Social Inclusion",
       path: "/social-inclusion",
     },

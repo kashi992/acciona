@@ -41,7 +41,7 @@ const hasTrackedRef = useRef(false);
                      <h2 className="thumbTitle">
                     Methodology
                     </h2>
-                    <div className="thumbnails _thumbnails grid relative xl:grid-cols-2 gap-8 mx-auto">
+                    <div className="thumbnails grid relative xl:grid-cols-1 gap-8 mx-auto">
                         {/* Thumbnail 1*/}
                         <div
                             className={`thumbnail cursor-pointer`}
@@ -68,7 +68,7 @@ const hasTrackedRef = useRef(false);
                             </p>
                         </div>
                          {/* Thumbnail 2*/}
-                         <div
+                         {/* <div
                             className={`thumbnail cursor-pointer`}
                             onClick={() => {
                                 setSelectedVideo(2);
@@ -90,7 +90,7 @@ const hasTrackedRef = useRef(false);
                             </div>
                             <p className="sf min-[1680px]:text-[30px] min-[1370px]:text-[24px] text-[18px] text-white text-center min-[1370px]:mt-5 mt-2 font-bold">
                             </p>
-                        </div>
+                        </div> */}
                            {/* Back Button */}
                         <button
                             className="backButton cursor-pointer"
