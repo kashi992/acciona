@@ -27,7 +27,7 @@ const Routers = () => {
     <Route path="/interface-and-integration" element={<InterfaceIntegration/>} />
     <Route path="/construction-methodology" element={<ConstructionMethodology/>} />
     <Route path="/community" element={<Community/>} />
-    <Route path="/social-inclusion" element={<SocialInclusion/>} />
+    <Route path="/fly-through" element={<SocialInclusion/>} />
     </Route>
   
   </Routes>

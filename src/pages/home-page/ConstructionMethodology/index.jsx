@@ -39,7 +39,7 @@ const hasTrackedRef = useRef(false);
             {viewState === "thumbnail" && (
                 <div className="thumbnailsView h-full relative flex flex-col justify-center container">
                      <h2 className="thumbTitle">
-                    Methodology
+                    Construction Methodology
                     </h2>
                     <div className="thumbnails grid relative xl:grid-cols-1 gap-8 mx-auto">
                         {/* Thumbnail 1*/}
@@ -64,7 +64,6 @@ const hasTrackedRef = useRef(false);
                                 />
                             </div>
                             <p className="sf min-[1680px]:text-[30px] min-[1370px]:text-[24px] text-[18px] text-white text-center min-[1370px]:mt-5 mt-2 font-bold">
-                            The Bays - 4D Construction Methodology
                             </p>
                         </div>
                          {/* Thumbnail 2*/}
@@ -145,7 +144,7 @@ const hasTrackedRef = useRef(false);
 
               {/* Video Title and Description */}
               <h2 className="VideoTitle">
-              Methodology
+        Construction Methodology
               </h2>
               <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]">
               

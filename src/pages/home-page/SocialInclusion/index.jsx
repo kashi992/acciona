@@ -38,7 +38,7 @@ const hasTrackedRef = useRef(false);
             {viewState === "thumbnail" && (
                 <div className="thumbnailsView h-full relative flex flex-col justify-center container">
                      <h2 className="thumbTitle">
-                    Social Inclusion
+                    Fly-through
                     </h2>
                     <div className="thumbnails grid relative grid-cols-1 items-center mx-auto">
                         {/* Thumbnail */}
@@ -49,7 +49,7 @@ const hasTrackedRef = useRef(false);
                             <div className="relative mx-auto w-full bg-white rounded-[10px] min[1370px]:p-3 p-2 mb-2">
                                 <img
                                     src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg"
-                                    alt="Thumbnail Social Inclusion"
+                                    alt="Thumbnail Fly-through"
                                     className="w-full thumbnailImg object-cover"
                                 />
                                 <img
@@ -108,7 +108,7 @@ const hasTrackedRef = useRef(false);
 
                     {/* Video Title and Description */}
                     <h2 className="VideoTitle">
-                    Social Inclusion
+                   Fly-through
                     </h2>
                     <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]">
                     </p>

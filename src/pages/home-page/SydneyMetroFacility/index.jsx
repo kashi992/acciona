@@ -37,7 +37,7 @@ UseWatchTime(videoRef, "SydneyVideo", viewState === "video");
       {viewState === "thumbnail" && (
         <div className="thumbnailsView h-full relative flex flex-col justify-center container">
           <h2 className="thumbTitle">
-            Connecting with Country
+           The future
           </h2>
           <div className="thumbnails grid relative grid-cols-1 items-center mx-auto">
             {/* Thumbnail */}
@@ -58,7 +58,6 @@ UseWatchTime(videoRef, "SydneyVideo", viewState === "video");
                 />
               </div>
               <p className="sf min-[1680px]:text-[30px] min-[1370px]:text-[24px] text-[18px] text-white text-center min-[1370px]:mt-5 mt-2 font-bold">
-                A 3D Animation of the Sydney Metro Facility in Clyde.
               </p>
             </div>
                 {/* Back Button */}
@@ -111,7 +110,7 @@ UseWatchTime(videoRef, "SydneyVideo", viewState === "video");
 
           {/* Video Title and Description */}
           <h2 className="VideoTitle">
-            Sydney Metro Facility
+The future
           </h2>
           <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]"></p>
         </div>
