@@ -1,138 +1,147 @@
-header {
-border-bottom: 1px solid #707070;
-border-left: 24px solid #e20714;
-border-right: 24px solid #e20714;
-}
 header .container {
-  padding: 30px;
-  height: 200px;
-  max-width: 100%;
+  height: 140px;
   position: relative;
-  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 190px 1fr 160px 170px;
+  gap: 0px 60px;
+  align-items: center;
 }
+
 header .container::before {
   content: "";
-  background-color: #707070;
-  position: absolute;
-  height: 2px;
-  display: none;
-}
-header .container::after {
-  content: "";
-  background-color: #707070;
-  position: absolute;
-  width: 2px;
-  height: 55px;
-  left: 65%;
-  transform: translateX(-50%);
-  bottom: 0;
-  display: none !important;
-}
-header .container .bgBottom {
-  height: 2px;
+  background-color: #696561;
   width: 100%;
+  height: 1px;
+  position: absolute;
   bottom: 0;
+}
+
+header .logBTn {
+  font-size: 24px;
+  padding: 24px 40px;
+  border-radius: 40px;
+  background-color: #074d44;
+}
+
+header h2 {
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: 900;
+  padding-left: 70px;
+  position: relative;
+}
+
+header h2::before {
+  content: "";
+  background-color: #808080;
+  height: 75px;
+  width: 1px;
   position: absolute;
   left: 0;
-  display: flex;
-  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
 }
-header .container .bgBottom span {
-  background-color: #707070;
-  height: 100%;
-  display: inline-block;
-  width: 100%;
-  margin-left: 130px;
-  margin-right: 55px;
-}
-header .logBTn{
-    font-size: 24px;
-    padding: 24px 40px;
-    border-radius: 40px;
-    background-color: #e20714;
-}
+
 @media screen and (max-width: 1680px) {
-  header .container .bgBottom span {
-    margin-left: 110px;
-  }
+  header h2 {
+    font-size: 35px;
+    padding-left: 40px;
+}
+
   header .container {
-    height: 130px;
+    height: 110px;
+padding-top: 12px;
+padding-bottom: 12px;
+    grid-template-columns: 175px 1fr 140px 165px;
+    gap: 0px 30px;
+  }
+
+  header .logBTn {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  header .logBTn {
+    font-size: 20px;
+    border-radius: 30px;
     padding: 20px;
   }
-  header .container::after {
-    height: 45px;
-  }
 }
-@media screen and (max-width: 1600px) {
-  header .container .bgBottom span {
-    margin-left: 105px;
-  }
-  header {
-    border-left-width: 16px;
-    border-right-width: 16px;
-}
-header .logBTn {
-    font-size: 20px;
-    padding: 22px 34px;
-    border-radius: 30px;
-}
-}
+
 @media screen and (max-width: 1570px) {
-     header .container {
-        height: 100px;
-        padding: 12px;
+      header h2 {
+        font-size: 30px;
+        padding-left: 30px;
     }
-        header .logBTn {
-        font-size: 18px;
-        padding: 18px 30px;
-        border-radius: 24px;
-    }
+  header .container {
+    height: 100px;
+    grid-template-columns: 175px 1fr 140px 150px;
+  }
+
 }
+
 @media screen and (max-width: 1370px) {
-    header .container {
-        height: 80px;
-        padding: 8px;
-    }
-        header .logBTn {
-        font-size: 16px;
-        padding: 14px 24px;
-    }
+  header h2::before {
+    height: 45px;
 }
+  header .container {
+    height: 80px;
+padding-top: 8px;
+padding-bottom: 8px;
+        grid-template-columns: 120px 1fr 120px 120px;
+  }
+
+  header .logBTn {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+}
+
 @media screen and (max-width: 1198.99px) {
   header .container {
     max-width: 100%;
   }
-  header .container {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+
   header .container .bgBottom span {
     margin-left: 65px;
     margin-right: 18px;
   }
 }
+
 @media screen and (max-width: 991.99px) {
-     header .logBTn {
-        font-size: 16px;
-        padding: 15px 22px;
+      header .container {
+        height: 70px;
+        grid-template-columns: 85px 1fr 100px 100px;
     }
-  header .container::before {
-    width: 90.63%;
+    header h2 {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+  header .logBTn {
+    font-size: 16px;
+    padding: 15px 22px;
   }
   header .container .bgBottom span {
     margin-left: 55px;
   }
 }
+
 @media screen and (max-width: 575px) {
-     header .logBTn {
-        font-size: 15px;
-        padding: 12px 18px;
+      header .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 40px;
     }
-  header .container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    height: auto;
+      header h2 {
+      display: none;
+    }
+  header .logBTn {
+    font-size: 15px;
+    padding: 12px 18px;
   }
+
   header .container::after {
     display: none;
   }

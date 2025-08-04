@@ -21,11 +21,11 @@ const Routers = () => {
     <Route element={<ProtectedRoute />}>
     <Route path="/home" element={<HeroSlider/>} />
     <Route path="/vision" element={<Vision/>} />
-    <Route path="/finance-model" element={<Safety/>} />
+    <Route path="/social-procurement" element={<Safety/>} />
     <Route path="/sustainability" element={<SystemEngineering2/>} />
     <Route path="/the-future" element={<SydneyMetroFacility/>} />
     <Route path="/interface-and-integration" element={<InterfaceIntegration/>} />
-    <Route path="/construction-methodology" element={<ConstructionMethodology/>} />
+    <Route path="/construction-sequence" element={<ConstructionMethodology/>} />
     <Route path="/community" element={<Community/>} />
     <Route path="/fly-through" element={<SocialInclusion/>} />
     </Route>

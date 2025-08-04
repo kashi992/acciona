@@ -15,53 +15,53 @@ const HeroSlider = () => {
   const slides = [
     {
       id: 1,
-         image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
+         image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/theVision.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/theVision.png",
       title: "The Vision",
       path: "/vision",
     },
     {
       id: 2,
-         image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Fly-through",
+         image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/flyThrough.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/flyThrough.png",
+      title: "Fly Through",
       path: "/fly-through",
     },
     {
       id: 3,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Construction Methodology",
-      path: "/construction-methodology",
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/constructionSequence.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/constructionSequence.png",
+      title: "4D Construction Sequence",
+      path: "/construction-sequence",
     },
     {
       id: 4,
-    image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Our Finance Model",
-      path: "/finance-model",
+    image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/socialProcurement.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/socialProcurement.png",
+      title: "Social Procurement",
+      path: "/social-procurement",
     },
     {
       id: 5,
-    image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Community",
+    image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/community.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/community.png",
+      title: "Community Engagement",
       path: "/community",
     },
-    {
-      id: 6,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "Sustainability",
-      path: "/sustainability",
-    },
-    {
-      id: 7,
-          image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
-      title: "The future",
-      path: "/the-future",
-    },
+    // {
+    //   id: 6,
+    //   image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
+    //   imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
+    //   title: "Sustainability",
+    //   path: "/sustainability",
+    // },
+    // {
+    //   id: 7,
+    //       image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
+    //   imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon+(2).png",
+    //   title: "The future",
+    //   path: "/the-future",
+    // },
     // {
     //   id: 7,
     //      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
@@ -92,7 +92,6 @@ const HeroSlider = () => {
   return (
     <section className="heroWrap">
       <div className="container">
-        <h1> 2025 INTERACTIVE BID PORTAL </h1>
         <Swiper
           ref={swiperRef}
           grabCursor={true}
@@ -135,7 +134,7 @@ const HeroSlider = () => {
               slidesPerGroup: 3,
             },
             1920: {
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 80,
               slidesPerGroup: 3,
             },
@@ -159,6 +158,13 @@ const HeroSlider = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <h1>Interactive Bid Portal</h1>
+        <div className="line1 absolute top-0 right-[-70px]">
+          <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_03.png" alt="" className="min-[1600px]:w-[478px] min-[1570px]:w-[400px] min-[575px]:w-[350px] w-[260px]" />
+        </div>
+        <div className="line2 absolute right-0 bottom-0">
+          <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_04.png" alt="" className="min-[1570px]:w-[431px] min-[575px]:w-[300px] w-[135px]"/>
+        </div>
       </div>
     </section>
   );

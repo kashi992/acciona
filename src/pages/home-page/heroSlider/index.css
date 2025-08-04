@@ -1,9 +1,21 @@
 .heroWrap {
-  min-height: calc(100% - 145px);
+  min-height: calc(100% - 140px);
   display: flex;
   flex-direction: column;
   position: relative;
   flex: 1;
+}
+
+.heroWrap::before,.login-container::before {
+  content: "";
+  background-image: url(https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/heroBg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
 }
 
 .heroWrap .container {
@@ -11,30 +23,28 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .heroWrap h1 {
-  font-size: 55px;
-  color: #fff;
-  font-weight: 700;
+  font-size: 45px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 90px;
+  color: #074d44;
+  font-weight: 900;
 }
 
 .heroSwiper {
   width: 100%;
   height: 100%;
   perspective: unset;
-  padding: 0 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
+  position: unset;
+  padding: 50px 80px;
 }
 
 .heroSwiper .slideImg {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease;
@@ -42,8 +52,9 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 30px;
-  background-color: #fff;
+}
+
+.heroSwiper .slideImg img {
   border-radius: 50%;
 }
 
@@ -62,10 +73,6 @@
 .heroSwiper .slideImg:hover::before {
   opacity: 0.5;
   visibility: visible;
-}
-
-.heroSwiper .slideImg img {
-  width: 70%;
 }
 
 .heroSwiper .swiper-slide {
@@ -110,8 +117,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-weight: 700;
-  color: #fff;
+
+  color: #074d44;
+  font-weight: 600;
 }
 
 .heroSwiper .swiper-wrapper {
@@ -283,21 +291,10 @@
 
 .thumbnailsView h2.thumbTitle {
   font-size: 45px;
-  color: #ffffff;
-  font-weight: 700;
   text-align: center;
-  margin-bottom: 30px;
-}
-
-.thumbnailsView::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100vw;
-  height: 1000vw;
-  z-index: -1;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 20px;
+color: #074d44;
+font-weight: 900;
 }
 
 .thumbnailsView .thumbnail.thumbnail_one {
@@ -320,13 +317,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
   color: #ffffff;
-  font-weight: 700;
-  border-radius: 25px;
+  border-radius: 35px;
   margin-left: auto;
   margin-right: auto;
   grid-column: 1/3;
+background-color: #f07b6e;
+font-size: 28px;
+font-weight: 600;
 }
 
 .videoView {
@@ -355,22 +353,28 @@
 
 .VideoTitle {
   font-size: 45px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   text-align: center;
   margin-top: 16px;
   margin-bottom: 10px;
 }
-  .thumbnailsView .thumbnail .thumbnailImg {
-    height: 530px;
-  }
 
-  .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
-    height: 450px;
-  }
+.thumbnailsView .thumbnail .thumbnailImg {
+  height: 530px;
+}
+
+.thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
+  height: 450px;
+}
+
 @media screen and (max-width: 1680px) {
-  .thumbnails {
+    .thumbnailsView h2.thumbTitle {
+    font-size: 35px;
+  }
+    .thumbnails {
     max-width: 780px;
+    gap: 30px 0;
   }
 
   .heroSwiper .slideImg {
@@ -389,7 +393,7 @@
   }
 
   .heroWrap {
-    height: calc(100% - 80px);
+    min-height: calc(100% - 110px);
   }
 
   .heroSwiper .swiper-slide h2 {
@@ -406,8 +410,12 @@
 }
 
 @media screen and (max-width: 1600px) {
+ 
+  .heroWrap::before {
+  background-size: 100% 100%;
+}
   .heroSwiper .swiper-slide h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .heroWrap h1 {
@@ -443,19 +451,28 @@
   .VideoTitle {
     font-size: 35px;
   }
-   .thumbnailsView .thumbnail .thumbnailImg {
+
+  .thumbnailsView .thumbnail .thumbnailImg {
     height: 450px;
   }
 
   .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
     height: 370px;
   }
-.thumbnails._thumbnails {
+
+  .thumbnails._thumbnails {
     column-gap: 24px;
-}
+  }
 }
 
 @media screen and (max-width: 1570px) {
+      .thumbnailsView h2.thumbTitle {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .heroWrap {
+    min-height: calc(100% - 100px);
+  }
   .heroSwiper .slideImg {
     width: 150px;
     height: 150px;
@@ -470,32 +487,46 @@
   .heroSwiper .swiper-button-next {
     right: 47%;
   }
+
   .heroSwiper .swiper-button-prev {
     left: 47%;
   }
-      .heroWrap h1 {
-        font-size: 36px;
-    }
-          .thumbnails {
-        max-width: 700px;
-    }
-        .thumbnailsView .thumbnail .thumbnailImg {
-        height: 350px;
-    }
-        .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
-        height: 320px;
-    }
-        .backButton {
-        width: 180px;
-        height: 60px;
-        font-size: 24px;
-    }
+
+  .heroWrap h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .thumbnails {
+    max-width: 700px;
+  }
+
+  .thumbnailsView .thumbnail .thumbnailImg {
+    height: 350px;
+  }
+
+  .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
+    height: 320px;
+  }
+
+  .backButton {
+    width: 180px;
+    height: 60px;
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 1370px) {
-      .thumbnails {
-        max-width: 600px;
+      .heroWrap {
+        min-height: calc(100% - 80px);
     }
+  .heroSwiper{
+        padding: 30px 60px;
+  }
+  .thumbnails {
+    max-width: 600px;
+  }
+
   .thumbnailsView .thumbnail.thumbnail_one .thumbImg {
     height: 360px;
   }
@@ -509,58 +540,69 @@
     height: 50px;
     font-size: 18px;
   }
-      .heroWrap h1 {
-        font-size: 30px;
-    }
-        .backButton {
-               width: 130px;
-        height: 45px;
-        font-size: 16px;
-        border-radius: 30px;
-    }
-        .heroSwiper .slideImg {
-        width: 130px;
-        height: 130px;
-    }
-        .heroSwiper .swiper-button-prev, .heroSwiper .swiper-button-next {
-        padding: 24px;
-    }
-        .heroSwiper .swiper-button-prev::after, .heroSwiper .swiper-button-next::after {
-        font-size: 18px;
-    }
-        .thumbnailsView .thumbnail .thumbnailImg {
-        height: 300px;
-        }
-            .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
-        height: 285px;
-    }
-        .thumbnailsView h2.thumbTitle {
-        font-size: 26px;
-        margin-bottom: 16px;
-    }
-    .thumbnails._thumbnails {
-        column-gap: 16px;
-    }
-      .VideoTitle {
+
+  .heroWrap h1 {
+    font-size: 30px;
+  }
+
+  .backButton {
+    width: 130px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+
+  .heroSwiper .slideImg {
+    width: 130px;
+    height: 130px;
+  }
+
+  .heroSwiper .swiper-button-prev,
+  .heroSwiper .swiper-button-next {
+    padding: 24px;
+  }
+
+  .heroSwiper .swiper-button-prev::after,
+  .heroSwiper .swiper-button-next::after {
+    font-size: 18px;
+  }
+
+  .thumbnailsView .thumbnail .thumbnailImg {
+    height: 300px;
+  }
+
+  .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
+    height: 285px;
+  }
+
+  .thumbnails._thumbnails {
+    column-gap: 16px;
+  }
+
+  .VideoTitle {
     font-size: 26px;
-        margin-top: 8px;
+    margin-top: 8px;
     margin-bottom: 0px;
   }
 }
 
 @media screen and (max-width: 1198.99px) {
-      .backButton {
+  .backButton {
     grid-column: auto;
-    }
-.thumbnails._thumbnails {
+  }
+
+  .thumbnails._thumbnails {
     max-width: 80%;
-}
-    .heroSwiper .swiper-button-next {
-        right: 46%;
-    }
-    .heroSwiper .swiper-button-prev {
-        left: 46%;
-    }
+  }
+
+  .heroSwiper .swiper-button-next {
+    right: 46%;
+  }
+
+  .heroSwiper .swiper-button-prev {
+    left: 46%;
+  }
+
   .thumbnailsView .thumbnail.thumbnail_one .thumbImg {
     height: 100%;
     width: 100%;
@@ -595,41 +637,32 @@
 }
 
 @media screen and (max-width: 991.99px) {
-      .heroWrap h1 {
-        font-size: 24px;
-        margin-top: 20px;
+      .heroWrap {
+        min-height: calc(100% - 70px);
     }
-        header .container {
-        height: 70px;
-    }
-      header {
-        border-left-width: 8px;
-        border-right-width: 8px;
-    }
-  .heroSwiper .slideImg {
-    width: 100px;
-    height: 100px;
-    padding: 22px;
+  .heroWrap h1 {
+    font-size: 24px;
+    margin-top: 20px;
   }
-
   .heroSwiper .swiper-slide h2 {
     font-size: 16px;
   }
 
-  .heroSwiper {
-    padding: 0 60px;
+  .heroSwiper .swiper-button-next {
+    right: 45%;
   }
-    .heroSwiper .swiper-button-next {
-        right: 45%;
-    }
-    .heroSwiper .swiper-button-prev {
-        left: 45%;
-    }
+
+  .heroSwiper .swiper-button-prev {
+    left: 45%;
+  }
 }
 
 @media screen and (max-width: 575px) {
-        header .container {
-        justify-content: space-between;
+      .thumbnailsView h2.thumbTitle {
+        font-size: 16px;
+    }
+      .heroWrap::before {
+        background-size: cover;
     }
   .thumbnails._thumbnails {
     max-width: 100%;
@@ -663,15 +696,19 @@
   .heroSwiper .swiper-button-next::after {
     font-size: 14px;
   }
-      .heroSwiper .swiper-button-prev, .heroSwiper .swiper-button-next {
-        padding: 20px;
-        width: 40px;
-        height: 40px;
-    }
-    .heroSwiper .swiper-button-prev {
-        left: 42%;
-    }
-    .heroSwiper .swiper-button-next {
-        right: 42%;
-    }
+
+  .heroSwiper .swiper-button-prev,
+  .heroSwiper .swiper-button-next {
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .heroSwiper .swiper-button-prev {
+    left: 42%;
+  }
+
+  .heroSwiper .swiper-button-next {
+    right: 42%;
+  }
 }

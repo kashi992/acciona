@@ -33,7 +33,7 @@ UseWatchTime(videoRef, "SydneyVideo", viewState === "video");
 
 
   return (
-    <>
+    <div className="heroWrap">
       {viewState === "thumbnail" && (
         <div className="thumbnailsView h-full relative flex flex-col justify-center container">
           <h2 className="thumbTitle">
@@ -115,7 +115,7 @@ The future
           <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]"></p>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

@@ -15,15 +15,19 @@ const location = useLocation();
 
   return (
     <header className={`bg-white ${location.pathname === "/dashboard" ? 'hidden' : ''}`}>
-      <div className="container flex md:justify-between justify-center items-center md:flex-nowrap flex-wrap md:gap-0 gap-3">
-        <div className="headerLogos h-full">
-        <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/mainLogo.png" alt="" className="h-full w-full object-contain"/>
+      <div className="container">
+        <div className="h-fit">
+        <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/northway_logo.png" alt="" className="min-[1370px]:h-full min-[1200px]:h-[50px] h-[35px]"/>
+        </div>
+        <h2 className={`text-[#074d44] ${location.pathname === "/home" ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>Northland Corridor PPP</h2>
+        <div className={`${location.pathname === "/login" ? 'col-span-2 min-[1370px]:h-[72px] h-[60px] ml-auto' : 'col-span-1 h-fit'}`}>
+        <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/mainLogo.png" alt="" className="h-full"/>
         </div>
         {/* Show Logout button if logged in */}
         {isLoggedIn && (
           <button
             onClick={handleLogout}
-            className={`bg-[#294245] logBTn text-white leading-none shadow-md hover:bg-red-700 absolute xl:right-5 right-2 my-auto ${location.pathname !== '/login' ? 'block' : 'hidden'}`}
+            className={`bg-[#294245] logBTn text-white leading-none shadow-md hover:bg-red-700  my-auto ${location.pathname !== '/login' ? 'block' : 'hidden'}`}
           >
             Logout
           </button>

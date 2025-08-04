@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 145px);
+  height: calc(100% - 140px);
   flex: 1;
 }
 .login-form {
@@ -37,7 +37,7 @@
 }
 .login-form button {
   padding: 10px;
-  background-color: #e20714;
+  background-color: #074d44;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -67,7 +67,7 @@ color: #fff;
     gap: 20px;
   }
   .login-container {
-    height: calc(100% - 80px);
+    height: calc(100% - 70px);
   }
 }
 @media screen and (max-width: 1370px) {
@@ -90,6 +90,9 @@ color: #fff;
   }
 }
 @media screen and (max-width: 575px) {
+.login-container::before {
+    background-size: cover;
+}
   .login-form {
     width: 95%;
     gap: 16px;

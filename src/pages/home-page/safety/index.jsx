@@ -33,7 +33,7 @@ const hasTrackedRef = useRef(false);
 
       
     return (
-        <>
+        <div className="heroWrap">
             {viewState === "thumbnail" && (
                 <div className="thumbnailsView h-full relative flex flex-col justify-center container">
                     <h2 className="thumbTitle">
@@ -113,7 +113,7 @@ const hasTrackedRef = useRef(false);
                     </p>
                 </div>
             )}
-        </>
+        </div>
     );
 };
 
