@@ -691,7 +691,7 @@ font-weight: 600;
   }
 
   .heroWrap {
-    min-height: calc(100% - 70px);
+    min-height: calc(100vh - 70px);
     padding-bottom: 20px;
   }
 
