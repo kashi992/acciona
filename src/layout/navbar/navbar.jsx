@@ -16,11 +16,11 @@ const location = useLocation();
   return (
     <header className={`bg-white ${location.pathname === "/dashboard" ? 'hidden' : ''}`}>
       <div className="container">
-        <div className="h-fit">
-        <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/northway_logo.png" alt="" className="min-[1370px]:h-full min-[1200px]:h-[50px] h-[35px]"/>
+        <div className="min-[1680px]:h-[78px] min-[1370px]:h-[72px] min-[991px]:h-[50px] h-[35px]">
+        <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/northway_logo.png" alt="" className="h-full"/>
         </div>
         <h2 className={`text-[#074d44] ${location.pathname === "/home" ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>Northland Corridor PPP</h2>
-        <div className={`${location.pathname === "/login" ? 'col-span-2 min-[1370px]:h-[72px] h-[60px] ml-auto' : 'col-span-1 h-fit'}`}>
+        <div className={`min-[1680px]:h-[72px] min-[1370px]:h-[63px] min-[991px]:h-[50px] h-[45px] ${location.pathname === "/login" ? 'col-span-2 ml-auto' : 'col-span-1'}`}>
         <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/mainLogo.png" alt="" className="h-full"/>
         </div>
         {/* Show Logout button if logged in */}
