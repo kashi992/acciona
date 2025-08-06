@@ -184,7 +184,7 @@ const Dashboard = () => {
             {isLoggedIn && (
               <button
                 onClick={handleLogout}
-                className={`bg-[#294245] text-white border-[#294245] border-[1px] hover:bg-transparent hover:text-[#294245] py-4 md:px-8 px-4 leading-none rounded-[30px] shadow-md ${location.pathname !== '/login' ? 'block' : 'hidden'}`}
+                className={`bg-[#294245] text-white cursor-pointer border-[#294245] border-[1px] hover:bg-transparent hover:text-[#294245] py-4 md:px-8 px-4 leading-none rounded-[30px] shadow-md ${location.pathname !== '/login' ? 'block' : 'hidden'}`}
               >
                 Logout
               </button>

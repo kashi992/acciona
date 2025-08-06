@@ -9,7 +9,7 @@
 .heroWrap::before,.login-container::before {
   content: "";
   background-image: url(https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/heroBg.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
@@ -98,7 +98,7 @@
 }
 
 .heroSwiper .swiper-slide .sliderContent:hover {
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 .heroSwiper .swiper-slide .sliderContent:hover .slideImg::before {
@@ -368,6 +368,11 @@ font-weight: 600;
   height: 450px;
 } */
 
+@media screen and (max-width: 1920px) {
+.heroWrap::before,.login-container::before {
+  background-size: contain;
+}
+}
 @media screen and (max-width: 1680px) {
   .thumbnailsView .thumbnail .thumbnailImg {
     height: 550px !important;
@@ -686,7 +691,7 @@ font-weight: 600;
   }
 
   .heroWrap {
-    height: calc(100% - 70px);
+    min-height: calc(100% - 70px);
   }
 
   .heroSwiper .swiper-slide h2 {
