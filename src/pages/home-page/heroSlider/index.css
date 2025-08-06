@@ -692,6 +692,7 @@ font-weight: 600;
 
   .heroWrap {
     min-height: calc(100% - 70px);
+    padding-bottom: 20px;
   }
 
   .heroSwiper .swiper-slide h2 {
@@ -716,6 +717,7 @@ font-weight: 600;
     padding: 20px;
     width: 40px;
     height: 40px;
+     bottom: 60px;
   }
 
   .heroSwiper .swiper-button-prev {
