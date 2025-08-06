@@ -89,6 +89,9 @@ input[type=button],
 input[type=submit] {
   transition: color .3s ease, background-color .3s ease, border-color .3s ease;
 }
+button{
+  cursor: pointer;
+}
 
 .slick-track {
   display: flex;

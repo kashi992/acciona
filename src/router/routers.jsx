@@ -11,6 +11,7 @@ import ConstructionMethodology from "../pages/home-page/ConstructionMethodology"
 import Community from "../pages/home-page/Community"
 import SocialInclusion from "../pages/home-page/SocialInclusion"
 import ProtectedRoute from "./ProtectedRoute"; // Import ProtectedRoute
+import Dashboard from "../pages/dashboard"
 
 const Routers = () => {
   return (
@@ -20,6 +21,7 @@ const Routers = () => {
    
     <Route element={<ProtectedRoute />}>
     <Route path="/home" element={<HeroSlider/>} />
+    <Route path="/dashboard" element={<Dashboard/>} />
     <Route path="/vision" element={<Vision/>} />
     <Route path="/social-procurement" element={<Safety/>} />
     <Route path="/sustainability" element={<SystemEngineering2/>} />

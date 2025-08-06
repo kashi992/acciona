@@ -74,6 +74,9 @@ color: #fff;
 }
 @media screen and (max-width: 1370px) {
   .login-form input {
+    margin-bottom: 20px;
+}
+  .login-form input {
     height: 50px;
     font-size: 16px;
   }
@@ -82,9 +85,9 @@ color: #fff;
     font-size: 16px;
   }
   .login-form {
-    width: 400px;
+    width: 450px;
     gap: 16px;
-    padding: 24px;
+    padding: 20px;
   }
   .login-form h2 {
     font-size: 30px;
