@@ -150,6 +150,21 @@
 .heroSwiper .swiper-button-prev::after,
 .heroSwiper .swiper-button-next::after {
   font-size: 35px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  content: "";
+  background-position: center;
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    background-size: cover;
+}
+.heroSwiper .swiper-button-prev::after {
+background-image: url(../../../assets/images/leftChev.svg);
+}
+.heroSwiper .swiper-button-next::after {
+background-image: url(../../../assets/images/rightChev.svg);
 }
 
 .heroSwiper .swiper-pagination-bullet {
@@ -393,11 +408,6 @@ font-weight: 600;
     object-fit: contain;
   }
 
-  .heroSwiper .swiper-button-prev::after,
-  .heroSwiper .swiper-button-next::after {
-    font-size: 40px;
-  }
-
   .heroWrap {
     min-height: calc(100% - 110px);
   }
@@ -432,11 +442,6 @@ font-weight: 600;
   .heroSwiper .swiper-button-next {
     bottom: 30px;
     padding: 35px;
-  }
-
-  .heroSwiper .swiper-button-prev::after,
-  .heroSwiper .swiper-button-next::after {
-    font-size: 24px;
   }
 
   .thumbnailsView h2.thumbTitle {
@@ -570,7 +575,10 @@ font-weight: 600;
 
   .heroSwiper .swiper-button-prev::after,
   .heroSwiper .swiper-button-next::after {
-    font-size: 18px;
+ width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
   }
 
     .thumbnailsView .thumbnail .thumbnailImg {
@@ -691,8 +699,8 @@ font-weight: 600;
   }
 
   .heroWrap {
-    min-height: calc(100vh - 70px);
-    padding-bottom: 20px;
+    height: calc(100% - 70px);
+    min-height: auto;
   }
 
   .heroSwiper .swiper-slide h2 {
@@ -704,12 +712,17 @@ font-weight: 600;
   }
 
   .heroSwiper {
+    height: auto;
     padding: 0 30px;
   }
 
   .heroSwiper .swiper-button-prev::after,
   .heroSwiper .swiper-button-next::after {
-    font-size: 14px;
+ width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+    
   }
 
   .heroSwiper .swiper-button-prev,

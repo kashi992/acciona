@@ -121,5 +121,9 @@ button{
     padding-left: 10px;
     padding-right: 10px;
   }
+  .mainWraper {
+    min-height: auto;
+    height: 100vh;
+}
 
 }

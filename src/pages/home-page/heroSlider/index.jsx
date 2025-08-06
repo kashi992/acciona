@@ -108,7 +108,7 @@ const HeroSlider = () => {
             // when window width is <= 499px
             0: {
               slidesPerView: 1,
-              spaceBetweenSlides: 30,
+              spaceBetween: 30,
               centeredSlides: false,
               slidesPerGroup: 1,
             },
