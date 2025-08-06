@@ -17,10 +17,12 @@
 .login-form h2 {
   font-size: 40px;
   font-weight: 700;
+  line-height: 1.2;
 }
 .login-form p {
   margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 1.3;
 }
 .login-form input {
   width: 100%;

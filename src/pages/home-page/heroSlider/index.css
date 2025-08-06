@@ -29,7 +29,7 @@
 .heroWrap h1 {
   font-size: 45px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 80px;
   color: #074d44;
   font-weight: 900;
 }
@@ -39,7 +39,7 @@
   height: 100%;
   perspective: unset;
   position: unset;
-  padding: 50px 80px;
+  padding: 60px;
 }
 
 .heroSwiper .slideImg {

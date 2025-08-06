@@ -10,19 +10,19 @@ const Vision = () => {
     const fromSlideIndex = location.state?.fromSlideIndex || 0;
     const [isPlaying, setIsPlaying] = useState(''); // Controls playback state
     const videoRef = useRef(null);
-const hasTrackedRef = useRef(false);
+    const hasTrackedRef = useRef(false);
     const videoId = "VisionVideo";
-  UseWatchTime(videoRef, "VisionVideo", viewState === "video");
+    UseWatchTime(videoRef, "VisionVideo", viewState === "video");
     // Play video when switching to "video" view
     useEffect(() => {
         if (viewState === "video" && videoRef.current) {
             videoRef.current.play();
             setIsPlaying(true);
             if (!hasTrackedRef.current) {
-            handleFirstClick(videoId);
-            handleAllClicks(videoId);
-            hasTrackedRef.current = true;
-        }
+                handleFirstClick(videoId);
+                handleAllClicks(videoId);
+                hasTrackedRef.current = true;
+            }
             // Add event listeners for play and pause detection
             videoRef.current.addEventListener("play", () => setIsPlaying(true));
             videoRef.current.addEventListener("pause", () => setIsPlaying(false));
@@ -33,11 +33,11 @@ const hasTrackedRef = useRef(false);
     return (
         <div className="heroWrap">
             <div className="absolute top-[-140px] right-0 min-[1600px]:translate-x-[20%] translate-x-[10%] h-[80vw] xl:block hidden">
-          <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_03+(2).png" alt="" className="h-full object-cover min-[1681px]:w-[740px] min-[1570px]:w-[620px] min-[1370px]:w-[540px] w-[475px]" />
-        </div>
-        <div className="absolute top-0 left-0 min-[1600px]:translate-x-[-40%] translate-x-[-18%] translate-y-[-20%] min-[1600px]:h-[65vw] h-[40vw] xl:block hidden">
-          <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_01.png" alt="" className="h-full object-cover min-[1681px]:w-[970px] min-[1570px]:w-[900px] min-[1370px]:w-[530px] w-[410px]" />
-        </div>
+                <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_03+(2).png" alt="" className="h-full object-cover min-[1681px]:w-[740px] min-[1570px]:w-[620px] min-[1370px]:w-[540px] w-[475px]" />
+            </div>
+            <div className="absolute top-0 left-0 min-[1600px]:translate-x-[-40%] translate-x-[-18%] translate-y-[-20%] min-[1600px]:h-[65vw] h-[40vw] xl:block hidden">
+                <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_01.png" alt="" className="h-full object-cover min-[1681px]:w-[970px] min-[1570px]:w-[900px] min-[1370px]:w-[530px] w-[410px]" />
+            </div>
             {viewState === "thumbnail" && (
                 <div className="thumbnailsView h-full relative flex flex-col justify-center container">
                     <h2 className="thumbTitle">
@@ -64,15 +64,15 @@ const hasTrackedRef = useRef(false);
                             <p className="sf min-[1680px]:text-[30px] min-[1370px]:text-[24px] text-[18px] text-white text-center min-[1370px]:mt-5 mt-2 font-bold">
                             </p>
                         </div>
-                         {/* Back Button */}
+                        {/* Back Button */}
                         <button
                             className="backButton cursor-pointer"
                             onClick={() => navigate("/home", { state: { returnToSlide: fromSlideIndex } })}
                         >
-                         Main Menu 
+                            Main Menu
                         </button>
                     </div>
-                    
+
                 </div>
             )}
 

@@ -34,6 +34,12 @@ const hasTrackedRef = useRef(false);
 
     return (
         <div className="heroWrap">
+             <div className="absolute top-[-140px] right-0 min-[1600px]:translate-x-[20%] translate-x-[10%] h-[80vw] xl:block hidden">
+                <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_03+(2).png" alt="" className="h-full object-cover min-[1681px]:w-[740px] min-[1570px]:w-[620px] min-[1370px]:w-[540px] w-[475px]" />
+            </div>
+            <div className="absolute top-0 left-0 min-[1600px]:translate-x-[-40%] translate-x-[-18%] translate-y-[-20%] min-[1600px]:h-[65vw] h-[40vw] xl:block hidden">
+                <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_01.png" alt="" className="h-full object-cover min-[1681px]:w-[970px] min-[1570px]:w-[900px] min-[1370px]:w-[530px] w-[410px]" />
+            </div>
             {viewState === "thumbnail" && (
                 <div className="thumbnailsView h-full relative flex flex-col justify-center container">
                     <h2 className="thumbTitle">
