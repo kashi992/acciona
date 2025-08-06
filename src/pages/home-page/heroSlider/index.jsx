@@ -134,7 +134,7 @@ const HeroSlider = () => {
               slidesPerGroup: 3,
             },
             1920: {
-              slidesPerView: 5,
+              slidesPerView: 4,
               spaceBetween: 80,
               slidesPerGroup: 3,
             },

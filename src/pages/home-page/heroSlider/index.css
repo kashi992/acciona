@@ -29,7 +29,6 @@
 .heroWrap h1 {
   font-size: 45px;
   text-align: center;
-  margin-top: 80px;
   color: #074d44;
   font-weight: 900;
 }
@@ -39,7 +38,7 @@
   height: 100%;
   perspective: unset;
   position: unset;
-  padding: 60px;
+  padding: 60px 60px 140px 60px;
 }
 
 .heroSwiper .slideImg {
@@ -131,7 +130,7 @@
   color: #fff;
   z-index: 9;
   margin: 0;
-  bottom: 50px;
+  bottom: 30px;
   top: auto;
   padding: 40px;
   background-color: #074d44;
@@ -335,21 +334,21 @@ font-weight: 600;
 }
 
 .thumbnails {
-  max-width: 1000px;
+  max-width: 1050px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  gap: 40px 0;
+  gap: 30px 0;
 }
 
 .thumbnails._thumbnails {
   max-width: 90%;
   column-gap: 40px;
 }
-
+/* 
 .thumbnails img {
   object-fit: fill;
-}
+} */
 
 .VideoTitle {
   font-size: 45px;
@@ -361,22 +360,24 @@ font-weight: 600;
 }
 
 .thumbnailsView .thumbnail .thumbnailImg {
-  height: 530px;
+  height: 600px !important;
+  border: 22px solid #074D44;
 }
 
-.thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
+/* .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
   height: 450px;
-}
+} */
 
 @media screen and (max-width: 1680px) {
+  .thumbnailsView .thumbnail .thumbnailImg {
+    height: 550px !important;
+}
+.thumbnails {
+    max-width: 960px;
+}
     .thumbnailsView h2.thumbTitle {
     font-size: 35px;
   }
-    .thumbnails {
-    max-width: 780px;
-    gap: 30px 0;
-  }
-
   .heroSwiper .slideImg {
     width: 170px;
     height: 170px;
@@ -466,6 +467,9 @@ font-weight: 600;
 }
 
 @media screen and (max-width: 1570px) {
+  .heroSwiper {
+    padding: 45px 45px 80px 45px;
+}
       .thumbnailsView h2.thumbTitle {
         font-size: 25px;
         margin-bottom: 15px;
@@ -494,16 +498,16 @@ font-weight: 600;
 
   .heroWrap h1 {
     font-size: 36px;
-    margin-top: 0;
   }
 
   .thumbnails {
     max-width: 700px;
   }
 
-  .thumbnailsView .thumbnail .thumbnailImg {
-    height: 350px;
-  }
+    .thumbnailsView .thumbnail .thumbnailImg {
+        height: 390px !important;
+            border: 12px solid #074D44;
+    }
 
   .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
     height: 320px;
@@ -520,9 +524,6 @@ font-weight: 600;
       .heroWrap {
         min-height: calc(100% - 80px);
     }
-  .heroSwiper{
-        padding: 30px 60px;
-  }
   .thumbnails {
     max-width: 600px;
   }
@@ -567,9 +568,10 @@ font-weight: 600;
     font-size: 18px;
   }
 
-  .thumbnailsView .thumbnail .thumbnailImg {
-    height: 300px;
-  }
+    .thumbnailsView .thumbnail .thumbnailImg {
+        height: 300px !important;
+        border-width: 10px;
+    }
 
   .thumbnailsView .thumbnail .thumbnailImg.__thumbnailImg {
     height: 285px;
@@ -587,6 +589,9 @@ font-weight: 600;
 }
 
 @media screen and (max-width: 1198.99px) {
+  .heroSwiper .swiper-slide .sliderContent:hover {
+    transform: scale(1);
+}
   .backButton {
     grid-column: auto;
   }
@@ -658,6 +663,10 @@ font-weight: 600;
 }
 
 @media screen and (max-width: 575px) {
+      .thumbnailsView .thumbnail .thumbnailImg {
+        height: 210px !important;
+        border-width: 6px;
+    }
       .thumbnailsView h2.thumbTitle {
         font-size: 16px;
     }
