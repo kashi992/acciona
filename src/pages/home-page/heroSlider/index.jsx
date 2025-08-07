@@ -104,7 +104,7 @@ const HeroSlider = () => {
             grabCursor={true}
             centeredSlides={false}
             slidesPerView={4}
-            slidesPerGroup={2}
+            slidesPerGroup={1}
             spaceBetween={80}
             loop={false}
             pagination={true}
@@ -142,17 +142,17 @@ const HeroSlider = () => {
               // when window width is <= 999px
               1200: {
                 spaceBetween: 80,
-                slidesPerGroup: 3,
+          slidesPerGroup: 1,
               },
               1680: {
                 slidesPerView: 4,
                 spaceBetween: 80,
-                slidesPerGroup: 3,
+             slidesPerGroup: 1,
               },
               1920: {
                 slidesPerView: 4,
                 spaceBetween: 80,
-                slidesPerGroup: 3,
+              slidesPerGroup: 1,
               },
             }}
           >
