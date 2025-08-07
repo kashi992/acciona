@@ -770,8 +770,10 @@ width: 24px;
 
 @media screen and (max-width: 575px) {
   .heroSwiper .swiper-slide {
-        width: 295px !important;
-        min-width: 295px !important;
+        width: fit-content !important;
+        min-width: fit-content !important;
+            flex-shrink: 0 !important;
+        flex: 0 0 100% !important;
     }
       .swiperContainer .swiperPrev, .swiperContainer .swiperNext {
         padding: 10px;
