@@ -77,8 +77,12 @@
 
 .heroSwiper .swiper-slide {
   align-content: center;
-  /* flex-shrink: unset !important; */
-     flex: 0 0 auto !important;
+  flex-shrink: unset !important;
+     /* flex: 0 0 auto !important; */
+         width: 358px !important;
+    display: flex;
+    flex-direction: column;
+    min-width: 358px !important;
 }
 
 .heroSwiper .swiper-slide:last-child .slideImg:hover::before {
@@ -101,7 +105,7 @@
 }
 
 .heroSwiper .swiper-slide .sliderContent:hover {
-  transform: scale(1);
+  transform: scale(1.3);
 }
 
 .heroSwiper .swiper-slide .sliderContent:hover .slideImg::before {
@@ -428,6 +432,10 @@ pointer-events: none;
 }
 
 @media screen and (max-width: 1680px) {
+  .heroSwiper .swiper-slide {
+    width: 301px !important;
+    min-width: 301px !important;
+}
   .swiperContainer .swiperPrev, .swiperContainer .swiperNext {
     padding: 20px;
   }
@@ -523,6 +531,10 @@ pointer-events: none;
 }
 
 @media screen and (max-width: 1570px) {
+   .heroSwiper .swiper-slide {
+    width: 274px !important;
+    min-width: 274px !important;
+}
   .swiperContainer .swiperPrev, .swiperContainer .swiperNext {
     bottom: 20px;
   }
@@ -585,8 +597,16 @@ pointer-events: none;
   .swiperContainer .swiperPrev, .swiperContainer .swiperNext {
         padding: 15px;
     }
+      .heroSwiper .swiper-slide {
+    width: 252px !important;
+    min-width: 252px !important;
+}
 }
 @media screen and (max-width: 1370px) {
+     .heroSwiper .swiper-slide {
+    width: 234px !important;
+    min-width: 234px !important;
+}
     
   .heroWrap {
     min-height: calc(100% - 80px);
@@ -664,6 +684,10 @@ width: 24px;
 }
 
 @media screen and (max-width: 1198.99px) {
+      .heroSwiper .swiper-slide {
+        width: 263px !important;
+        min-width: 263px !important;
+    }
   .heroSwiper .swiper-slide .sliderContent:hover {
     transform: scale(1);
   }
@@ -718,6 +742,10 @@ width: 24px;
 }
 
 @media screen and (max-width: 991.99px) {
+   .heroSwiper .swiper-slide {
+        width: 184px !important;
+        min-width: 184px !important;
+    }
   .heroWrap {
     min-height: calc(100% - 70px);
   }
@@ -741,6 +769,10 @@ width: 24px;
 }
 
 @media screen and (max-width: 575px) {
+  .heroSwiper .swiper-slide {
+        width: 295px !important;
+        min-width: 295px !important;
+    }
       .swiperContainer .swiperPrev, .swiperContainer .swiperNext {
         padding: 10px;
         bottom: 30px;
