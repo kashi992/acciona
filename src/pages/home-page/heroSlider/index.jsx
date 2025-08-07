@@ -94,7 +94,7 @@ const HeroSlider = () => {
   }, [location.state]);
 
   return (
-    <section className="heroWrap" style={{backgroundColor:"green"}}>
+    <section className="heroWrap">
       <div className="container">
         <div className="swiperContainer">
           <button ref={prevRef} className="swiperPrev"><img src={swiperPrev} alt="" /></button>
@@ -161,11 +161,8 @@ const HeroSlider = () => {
                 key={slide.id}
                 // onClick={() => handleSlideClick(slide)} // Open thumbnails view
                 onClick={() =>
-                  navigate(slide.path)
+                  navigate(slide.path, { state: { fromSlideIndex: index } })
                 }
-                // onClick={() =>
-                //   navigate(slide.path, { state: { fromSlideIndex: index } })
-                // }
               >
                 <div className="sliderContent">
                   <div className="slideImg">
