@@ -99,7 +99,7 @@
 }
 
 .heroSwiper .swiper-slide .sliderContent:hover {
-  transform: scale(1.3);
+  transform: scale(1);
 }
 
 .heroSwiper .swiper-slide .sliderContent:hover .slideImg::before {
