@@ -10,7 +10,7 @@ const LoginForm = () => {
 
   // Credentials
   const correctAdminUsername = "info@admin";
-  const correctAdminPassword = "linewidepanel";
+  const correctAdminPassword = "accinpanel@&#";
   const correctUsername = "accionajv";
   const correctPassword = "nzthana";
 
