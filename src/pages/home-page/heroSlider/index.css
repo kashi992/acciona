@@ -77,7 +77,8 @@
 
 .heroSwiper .swiper-slide {
   align-content: center;
-  flex-shrink: unset !important;
+  /* flex-shrink: unset !important; */
+     flex: 0 0 auto !important;
 }
 
 .heroSwiper .swiper-slide:last-child .slideImg:hover::before {
