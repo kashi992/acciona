@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "swiper/css";
@@ -10,19 +10,22 @@ import "./index.css"; // For custom styles
 import { useNavigate, useLocation } from "react-router-dom";
 import swiperPrev from "../../../assets/images/leftChev.svg";
 import swiperNext from "../../../assets/images/rightChev.svg";
+import Modal from './Modal';
 const HeroSlider = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const swiperRef = useRef(null);
    const prevRef  = useRef(null);
   const nextRef  = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const slides = [
     {
       id: 1,
       image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/theVision.png",
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/theVision.png",
       title: "The Vision",
-      path: "/vision",
+        path: "/the-vision",
+ disabled: true,
     },
     {
       id: 2,
@@ -30,6 +33,7 @@ const HeroSlider = () => {
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/flyThrough.png",
       title: "Fly Through",
       path: "/fly-through",
+      disabled: false,
     },
     {
       id: 3,
@@ -37,6 +41,7 @@ const HeroSlider = () => {
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/constructionSequence.png",
       title: "4D Construction Sequence",
       path: "/construction-sequence",
+      disabled: false,
     },
     {
       id: 4,
@@ -44,6 +49,7 @@ const HeroSlider = () => {
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/socialProcurement.png",
       title: "Social Procurement",
       path: "/social-procurement",
+      disabled: true,
     },
     {
       id: 5,
@@ -51,6 +57,7 @@ const HeroSlider = () => {
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/community.png",
       title: "Community Engagement",
       path: "/community",
+      disabled: true,
     },
     // {
     //   id: 6,
@@ -82,8 +89,14 @@ const HeroSlider = () => {
     // },
   ];
 
-  const handleSlideClick = (slide) => {
-    navigate(slide.path);
+   const handleSlideClick = (slide, index) => {
+    if (slide.disabled) {
+      // Show modal for disabled slides
+      setIsModalOpen(true);
+    } else {
+      // Navigate normally for enabled slides
+      navigate(slide.path, { state: { fromSlideIndex: index } });
+    }
   };
   // ⬇️ Slide to the correct slide after mount
   useEffect(() => {
@@ -159,13 +172,13 @@ const HeroSlider = () => {
             {slides.map((slide, index) => (
               <SwiperSlide
                 key={slide.id}
-                // onClick={() => handleSlideClick(slide)} // Open thumbnails view
-                onClick={() =>
-                  navigate(slide.path, { state: { fromSlideIndex: index } })
-                }
+           onClick={() => handleSlideClick(slide, index)}
+                // onClick={() =>
+                //   navigate(slide.path, { state: { fromSlideIndex: index } })
+                // }
               >
                 <div className="sliderContent">
-                  <div className="slideImg">
+                  <div className={`slideImg ${slide.disabled ? "greySlide" : ""}`}>
                     <img className="slideImgN" src={slide.image} alt={`Slide ${slide.id}`} />
                     <img className="slideImgR" src={slide.imageR} alt={`Slide ${slide.id}`} />
                   </div>
@@ -183,6 +196,29 @@ const HeroSlider = () => {
         <div className="line2 absolute right-0 bottom-0">
           <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_04.png" alt="" className="min-[1570px]:w-[431px] min-[575px]:w-[300px] w-[135px]" />
         </div>
+
+        <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Content Not Available"
+      >
+        <div className="text-center">
+          <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-[#074d44] mb-4">
+            <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <p className="text-gray-600">
+            This video isn't available until the 28th November
+          </p>
+          <button
+            onClick={() => setIsModalOpen(false)}
+            className="mt-4 px-4 py-2 bg-[#074d44] text-white rounded hover:bg-black transition-colors"
+          >
+            OK
+          </button>
+        </div>
+      </Modal>
       </div>
     </section>
   );
