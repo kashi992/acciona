@@ -123,6 +123,7 @@ left: 0;
   bottom: 0;
   right: 0;
   border-radius: 50%;
+  opacity: 0.7;
 }
 
 .heroSwiper .swiper-slide h2 {
