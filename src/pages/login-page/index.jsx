@@ -11,8 +11,8 @@ const LoginForm = () => {
   // Credentials
   const correctAdminUsername = "info@admin";
   const correctAdminPassword = "accinpanel@&#";
-  const correctUsername = "accionajv";
-  const correctPassword = "nzthana";
+  const correctUsername = "northway25_ncp";
+  const correctPassword = "nztehana";
 
   const handleLogin = (e) => {
     e.preventDefault();

@@ -20,9 +20,9 @@ const location = useLocation();
         <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/northway_logo.png" alt="" className="h-full"/>
         </div>
         <h2 className={`text-[#074d44] ${location.pathname === "/home" ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>Northland Corridor PPP</h2>
-        <div className={`min-[1680px]:h-[72px] min-[1370px]:h-[63px] min-[991px]:h-[50px] h-[45px] ${location.pathname === "/login" ? 'col-span-2 ml-auto' : 'col-span-1'}`}>
+        {/* <div className={`min-[1680px]:h-[72px] min-[1370px]:h-[63px] min-[991px]:h-[50px] h-[45px] ${location.pathname === "/login" ? 'col-span-2 ml-auto' : 'col-span-1'}`}>
         <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/mainLogo.png" alt="" className="h-full"/>
-        </div>
+        </div> */}
         {/* Show Logout button if logged in */}
         {isLoggedIn && (
           <button
