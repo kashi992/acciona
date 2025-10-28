@@ -178,7 +178,7 @@ const HeroSlider = () => {
                 // }
               >
                 <div className="sliderContent">
-                  <div className={`slideImg ${slide.disabled ? "greySlide" : ""}`}>
+                  <div className={`slideImg ${slide.disabled ? "greySlide" : ""} ${slide.id === 4 ? "SocialProcurement" : ""}`}>
                     <img className="slideImgN" src={slide.image} alt={`Slide ${slide.id}`} />
                     <img className="slideImgR" src={slide.imageR} alt={`Slide ${slide.id}`} />
                   </div>

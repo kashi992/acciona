@@ -63,6 +63,22 @@ color: #294245;
 background-color: #294245;
 color: #fff;
 }
+.login-container::before {
+  content: "";
+  background-image: url(https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/heroBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+@media screen and (min-width: 1600px) {
+  .login-container::before {
+    background-size: contain;
+  }
+}
 @media screen and (max-width: 1680px) {
   .login-form {
     padding: 24px;
