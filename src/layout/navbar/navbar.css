@@ -4,7 +4,7 @@ header .container {
   padding-top: 30px;
   padding-bottom: 20px;
   display: grid;
-  grid-template-columns: 190px 1fr 160px 170px;
+  grid-template-columns: 190px 1fr 160px;
   gap: 0px 60px;
   align-items: center;
 }
@@ -61,7 +61,7 @@ header h2::before {
     height: 110px;
 padding-top: 12px;
 padding-bottom: 12px;
-    grid-template-columns: 175px 1fr 140px 165px;
+    grid-template-columns: 175px 1fr 140px;
     gap: 0px 30px;
   }
 
@@ -85,7 +85,7 @@ padding-bottom: 12px;
     }
   header .container {
     height: 100px;
-    grid-template-columns: 175px 1fr 140px 150px;
+    grid-template-columns: 175px 1fr 140px;
   }
 
 }
@@ -98,7 +98,7 @@ padding-bottom: 12px;
     height: 80px;
 padding-top: 8px;
 padding-bottom: 8px;
-        grid-template-columns: 120px 1fr 120px 120px;
+        grid-template-columns: 120px 1fr 120px;
   }
 
   header .logBTn {
@@ -121,7 +121,7 @@ padding-bottom: 8px;
 @media screen and (max-width: 991.99px) {
       header .container {
         height: 70px;
-        grid-template-columns: 85px 1fr 100px 100px;
+        grid-template-columns: 85px 1fr 100px;
     }
     header h2 {
         font-size: 20px;
@@ -138,7 +138,7 @@ padding-bottom: 8px;
 
 @media screen and (max-width: 575px) {
       header .container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 0 40px;
     }
       header h2 {
