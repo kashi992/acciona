@@ -137,7 +137,7 @@ function ConstructionMethodology() {
 
           {/* 2x2 grid of thumbnails */}
           <div
-            className="grid relative grid-cols-1 md:gap-4 gap-2 mx-auto min-[1690px]:max-w-[900px] w-full min-[1570px]:max-w-[800px] min-[1370px]:max-w-[600px] max-w-[500px]"
+            className="thumbnails grid relative grid-cols-1 md:gap-4 gap-2 mx-auto min-[1690px]:max-w-[900px] w-full min-[1570px]:max-w-[800px] min-[1370px]:max-w-[600px] max-w-[500px]"
           >
             {videos.map((v, i) => (
               <div
@@ -149,17 +149,17 @@ function ConstructionMethodology() {
                   <img
                     src={v.thumb}
                     alt={v.alt}
-                    className="w-full object-cover md:border-4 border-2 border-[#074D44] aspect-video"
+                    className="w-full thumbnailImg object-cover md:border-4 border-2 border-[#074D44] aspect-video"
                   />
                   <img
                     src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/playBtn.png"
                     alt="Play"
-                    className="absolute top-0 left-0 bottom-0 right-0 pointer-events-none m-auto md:w-[60px] w-[30px]"
+                    className="absolute top-0 left-0 bottom-0 right-0 pointer-events-none m-auto min-[1370px]:w-[110px] w-[80px]"
                   />
                 </div>
-                <p className="min-[1681px]:text-[24px] min-[1370px]:text-[20px] text-[16px] text-[#074d44] text-center min-[1370px]:mt-3 mt-2 font-bold">
+                {/* <p className="min-[1681px]:text-[24px] min-[1370px]:text-[20px] text-[16px] text-[#074d44] text-center min-[1370px]:mt-3 mt-2 font-bold">
               {v.thumbTitle}
-                </p>
+                </p> */}
               </div>
             ))}
 
