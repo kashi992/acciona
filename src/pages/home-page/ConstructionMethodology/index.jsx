@@ -20,46 +20,46 @@ function ConstructionMethodology() {
     () => [
       {
         id: "ConMethVideo1",
-        src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
+        src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline.mp4",
         poster:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
+          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
         thumb:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
+          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
         alt: "Thumbnail Methodology 1",
         thumbTitle: "Hoteo Bridge",
       },
-      {
-        id: "ConMethVideo2",
-        src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
-        poster:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-        thumb:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-        alt: "Thumbnail Methodology 2",
-              thumbTitle: "Bridge 1",
-      },
-      {
-        id: "ConMethVideo3",
-        // TODO: replace with your real file
-        src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
-        poster:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-        thumb:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-        alt: "Thumbnail Methodology 3",
-        thumbTitle: "Bridge 2",
-      },
-      {
-        id: "ConMethVideo4",
-        // TODO: replace with your real file
-        src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
-        poster:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-        thumb:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-        alt: "Thumbnail Methodology 4",
-        thumbTitle: "Bridge 3",
-      },
+      // {
+      //   id: "ConMethVideo2",
+      //   src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
+      //   poster:
+      //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
+      //   thumb:
+      //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
+      //   alt: "Thumbnail Methodology 2",
+      //         thumbTitle: "Bridge 1",
+      // },
+      // {
+      //   id: "ConMethVideo3",
+      //   // TODO: replace with your real file
+      //   src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
+      //   poster:
+      //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
+      //   thumb:
+      //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
+      //   alt: "Thumbnail Methodology 3",
+      //   thumbTitle: "Bridge 2",
+      // },
+      // {
+      //   id: "ConMethVideo4",
+      //   // TODO: replace with your real file
+      //   src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
+      //   poster:
+      //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
+      //   thumb:
+      //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
+      //   alt: "Thumbnail Methodology 4",
+      //   thumbTitle: "Bridge 3",
+      // },
     ],
     []
   );
@@ -137,7 +137,7 @@ function ConstructionMethodology() {
 
           {/* 2x2 grid of thumbnails */}
           <div
-            className="grid relative md:grid-cols-2 md:gap-4 gap-2 mx-auto min-[1690px]:max-w-[900px] w-full min-[1570px]:max-w-[800px] min-[1370px]:max-w-[600px] max-w-[500px]"
+            className="grid relative grid-cols-1 md:gap-4 gap-2 mx-auto min-[1690px]:max-w-[900px] w-full min-[1570px]:max-w-[800px] min-[1370px]:max-w-[600px] max-w-[500px]"
           >
             {videos.map((v, i) => (
               <div
