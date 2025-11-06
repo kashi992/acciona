@@ -15,7 +15,7 @@ body {
 
 body,
 html {
-  overflow-x: clip;
+  overflow-x: clip !important;
 }
 
 * {

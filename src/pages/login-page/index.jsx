@@ -11,8 +11,8 @@ const LoginForm = () => {
   // Credentials
   const correctAdminUsername = "info@admin";
   const correctAdminPassword = "accinpanel@&#";
-  const correctUsername = "northway25_ncp";
-  const correctPassword = "nztehana";
+  const correctUsername = "Northway";
+  const correctPassword = "W2THnorthway";
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -109,11 +109,11 @@ const LoginForm = () => {
             Admin
           </button>
         </div>
-        <h2>{activeTab === "admin" ? "Admin Login" : "User Login"}</h2>
-        <p>
+        <h2 className="mb-5 mt-3">{activeTab === "admin" ? "Admin Login" : "User Login"}</h2>
+        {/* <p>
           We believe in delivering Everyday Extraordinary - a solution that brings the
           'extra' and improves the lives of everyday people - every single day.
-        </p>
+        </p> */}
         <input
           type="text"
           placeholder="Username"

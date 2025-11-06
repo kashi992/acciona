@@ -30,7 +30,7 @@
   font-size: 45px;
   text-align: center;
   color: #074d44;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .heroSwiper {
@@ -365,7 +365,7 @@
   text-align: center;
   margin-bottom: 20px;
   color: #074d44;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .thumbnailsView .thumbnail.thumbnail_one {
@@ -444,7 +444,7 @@
 @media screen and (max-width: 1920px) {
 
   .heroWrap::before{
-    background-size: contain;
+    background-size: 100% 100%;
   }
 }
 

@@ -110,8 +110,8 @@ const HeroSlider = () => {
     <section className="heroWrap">
       <div className="container">
         <div className="swiperContainer">
-          <button ref={prevRef} className="swiperPrev"><img src={swiperPrev} alt="" /></button>
-          <button ref={nextRef} className="swiperNext"><img src={swiperNext} alt="" /></button>
+          {/* <button ref={prevRef} className="swiperPrev"><img src={swiperPrev} alt="" /></button>
+          <button ref={nextRef} className="swiperNext"><img src={swiperNext} alt="" /></button> */}
           <Swiper
             ref={swiperRef}
             grabCursor={true}
@@ -189,7 +189,7 @@ const HeroSlider = () => {
           </Swiper>
         </div>
 
-        <h1>Interactive Bid Portal</h1>
+        {/* <h1>Interactive Bid Portal</h1> */}
         <div className="line1 absolute top-0 right-[-70px]">
           <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/line_03.png" alt="" className="min-[1600px]:w-[478px] min-[1570px]:w-[400px] min-[575px]:w-[350px] w-[260px]" />
         </div>
