@@ -110,8 +110,8 @@ const HeroSlider = () => {
     <section className="heroWrap">
       <div className="container">
         <div className="swiperContainer">
-          {/* <button ref={prevRef} className="swiperPrev"><img src={swiperPrev} alt="" /></button>
-          <button ref={nextRef} className="swiperNext"><img src={swiperNext} alt="" /></button> */}
+          <button ref={prevRef} className="swiperPrev"><img src={swiperPrev} alt="" /></button>
+          <button ref={nextRef} className="swiperNext"><img src={swiperNext} alt="" /></button>
           <Swiper
             ref={swiperRef}
             grabCursor={true}
