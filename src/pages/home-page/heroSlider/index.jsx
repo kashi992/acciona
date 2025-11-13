@@ -64,7 +64,7 @@ const HeroSlider = () => {
       image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/pdfIcon.png",
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/pdfIcon.png",
       title: "Roll Plot",
-      path: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/12_11_ALIGNMENT+ROLL+PLOT.pdf",
+      path: "/roll-plot",
       disabled: false,
     },
     // {
@@ -103,10 +103,10 @@ const HeroSlider = () => {
       setIsModalOpen(true);
        return;
     }
-    else if (slide.id === 6) {
-     window.open(slide.path, "_blank", "noopener,noreferrer");
-       return;
-    }
+    // else if (slide.id === 6) {
+    //  window.open(slide.path, "_blank", "noopener,noreferrer");
+    //    return;
+    // }
     else {
       // Navigate normally for enabled slides
       navigate(slide.path, { state: { fromSlideIndex: index } });

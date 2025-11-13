@@ -9,6 +9,7 @@ import SydneyMetroFacility from "../pages/home-page/SydneyMetroFacility"
 import InterfaceIntegration from "../pages/home-page/InterfaceIntegration"
 import ConstructionMethodology from "../pages/home-page/ConstructionMethodology"
 import Community from "../pages/home-page/Community"
+import RollPlot from "../pages/home-page/RollPlot/index"
 import SocialInclusion from "../pages/home-page/SocialInclusion"
 import ProtectedRoute from "./ProtectedRoute"; // Import ProtectedRoute
 import Dashboard from "../pages/dashboard"
@@ -30,6 +31,7 @@ const Routers = () => {
     <Route path="/construction-sequence" element={<ConstructionMethodology/>} />
     <Route path="/community" element={<Community/>} />
     <Route path="/fly-through" element={<SocialInclusion/>} />
+    <Route path="/roll-plot" element={<RollPlot/>} />
     </Route>
   
   </Routes>
