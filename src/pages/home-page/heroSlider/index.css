@@ -122,7 +122,7 @@
   border-radius: 50%;
 }
 
-.slideImg.communityIcon::after {
+.slideImg.icon-without-shadow::after {
   display: none;
 }
 

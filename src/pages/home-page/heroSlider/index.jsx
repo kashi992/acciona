@@ -59,6 +59,14 @@ const HeroSlider = () => {
       path: "/community",
       disabled: true,
     },
+    {
+      id: 6,
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/pdfIcon.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/pdfIcon.png",
+      title: "Roll Plot",
+      path: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/12_11_ALIGNMENT+ROLL+PLOT.pdf",
+      disabled: false,
+    },
     // {
     //   id: 6,
     //   image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/favicon-black.png",
@@ -93,7 +101,13 @@ const HeroSlider = () => {
     if (slide.disabled) {
       // Show modal for disabled slides
       setIsModalOpen(true);
-    } else {
+       return;
+    }
+    else if (slide.id === 6) {
+     window.open(slide.path, "_blank", "noopener,noreferrer");
+       return;
+    }
+    else {
       // Navigate normally for enabled slides
       navigate(slide.path, { state: { fromSlideIndex: index } });
     }
@@ -178,7 +192,7 @@ const HeroSlider = () => {
                 // }
               >
                 <div className="sliderContent">
-                  <div className={`slideImg ${slide.disabled ? "greySlide" : ""} ${slide.id === 5 ? "communityIcon" : ""}`}>
+                  <div className={`slideImg ${slide.disabled ? "greySlide" : ""} ${slide.id === 5 ? "icon-without-shadow" : ""} ${slide.id === 6 ? "icon-without-shadow p-[15px]" : ""}`}>
                     <img className="slideImgN" src={slide.image} alt={`Slide ${slide.id}`} />
                     <img className="slideImgR" src={slide.imageR} alt={`Slide ${slide.id}`} />
                   </div>

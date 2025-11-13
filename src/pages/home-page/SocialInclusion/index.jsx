@@ -54,7 +54,7 @@ const hasTrackedRef = useRef(false);
                         >
                             <div className="relative mx-auto w-full">
                                 <img
-                                    src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_6_Thumb.jpg"
+                                    src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_13_Thumb.jpg"
                                     alt="Thumbnail Fly-through"
                                     className="w-full thumbnailImg object-cover"
                                 />
@@ -86,9 +86,9 @@ const hasTrackedRef = useRef(false);
                         <video
                         ref={videoRef}
                             className="w-full h-full custom-video-player"
-                            src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_6.mp4"
+                            src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_13.mp4"
                             controls
-                            poster="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_6_Thumb.jpg"
+                            poster="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_13_Thumb.jpg"
                         />
                         {!isPlaying && (
                             <div className={`absolute top-0 right-0 left-0 bottom-0 h-ull w-full flex flex-col`} onClick={() => videoRef.current.play()}>
