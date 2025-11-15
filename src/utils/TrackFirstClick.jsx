@@ -4,7 +4,7 @@ export const handleFirstClick = async (videoId) => {
       const ipRes = await fetch("https://ipinfo.io/json?token=0451d8a1ae05e5");
       const ipData = await ipRes.json();
 
-      await fetch("https://ax3oqjtahf.execute-api.us-east-1.amazonaws.com/prod/track-first-click", {
+      await fetch("https://b1bnn3xtc3.execute-api.us-east-1.amazonaws.com/prod/track-first-click", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -26,7 +26,7 @@ export const handleAllClicks = async (videoId) => {
     const ipRes = await fetch("https://ipinfo.io/json?token=0451d8a1ae05e5");
     const ipData = await ipRes.json();
 
-    await fetch("https://ax3oqjtahf.execute-api.us-east-1.amazonaws.com/prod/allClicks", {
+    await fetch("https://b1bnn3xtc3.execute-api.us-east-1.amazonaws.com/prod/allClicks", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

@@ -76,7 +76,7 @@ const video = videoRef.current;
       const ipRes = await fetch("https://ipinfo.io/json?token=0451d8a1ae05e5");
       const ip = (await ipRes.json()).ip;
 
-      await fetch("https://db30bn6w66.execute-api.us-east-1.amazonaws.com/prod/trackWatchTime", {
+      await fetch("https://b2vbbt4864.execute-api.us-east-1.amazonaws.com/prod/trackWatchTime", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

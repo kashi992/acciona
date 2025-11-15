@@ -41,7 +41,7 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    fetch("https://0zxbfdemyg.execute-api.us-east-1.amazonaws.com/prod/getVisitors")
+    fetch("https://yhqeotl54j.execute-api.us-east-1.amazonaws.com/prod/getVisitors")
       .then(res => res.json())
       .then(data => {
         setVisitorCount(data.count);
@@ -56,7 +56,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await fetch("https://ax3oqjtahf.execute-api.us-east-1.amazonaws.com/prod/get-first-click-stats");
+        const res = await fetch("https://b1bnn3xtc3.execute-api.us-east-1.amazonaws.com/prod/get-first-click-stats");
         const data = await res.json();
         const sorted = data.sort((a, b) => b.count - a.count);
         setStats(sorted);
@@ -92,7 +92,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchAllClicks = async () => {
       try {
-        const res = await fetch("https://ax3oqjtahf.execute-api.us-east-1.amazonaws.com/prod/allClicks");
+        const res = await fetch("https://b1bnn3xtc3.execute-api.us-east-1.amazonaws.com/prod/allClicks");
         const data = await res.json();
         setAllClickStats(data);
         // Aggregate total clicks per videoId
@@ -123,7 +123,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchWatchStats = async () => {
       try {
-        const res = await fetch("https://db30bn6w66.execute-api.us-east-1.amazonaws.com/prod/getWatchStats");
+        const res = await fetch("https://b2vbbt4864.execute-api.us-east-1.amazonaws.com/prod/getWatchStats");
         const data = await res.json();
         setWatchStats(data);
       } catch (err) {
