@@ -11,8 +11,8 @@ const SocialInclusion = () => {
     const [isPlaying, setIsPlaying] = useState(''); // Controls playback state
     const videoRef = useRef(null);
 const hasTrackedRef = useRef(false);
-    const videoId = "SocialVideo";
-      UseWatchTime(videoRef, "SocialVideo", viewState === "video");
+    const videoId = "FlyThroughVideo";
+      UseWatchTime(videoRef, "FlyThroughVideo", viewState === "video");
     // Play video when switching to "video" view
     useEffect(() => {
         if (viewState === "video" && videoRef.current) {
