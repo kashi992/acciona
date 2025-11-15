@@ -12,7 +12,7 @@ const LoginForm = () => {
   const correctAdminUsername = "info@admin";
   const correctAdminPassword = "accinpanel@&#";
   const correctUsername = "Northway";
-  const correctPassword = "W2THnorthway";
+  const correctPassword = "lucid3DG3";
 
   const handleLogin = (e) => {
     e.preventDefault();
