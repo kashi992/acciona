@@ -9,10 +9,10 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
   // Credentials
-  const correctAdminUsername = "info@admin";
-  const correctAdminPassword = "accinpanel@&#";
+  const correctAdminUsername = "Northway";
+  const correctAdminPassword = "lucid3DG3";
   const correctUsername = "Northway";
-  const correctPassword = "lucid3DG3";
+  const correctPassword = "W2THnorthway";
 
   const handleLogin = (e) => {
     e.preventDefault();
