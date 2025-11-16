@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`bg-white ${location.pathname === "/dashboard" ? 'hidden' : ''}`}>
+    <header className="bg-white">
       <div className="container">
         <Link to="/home" className="min-[1680px]:h-[78px] min-[1370px]:h-[72px] min-[991px]:h-[50px] h-[35px]">
           <img src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/northway_logo.png" alt="" className="h-full" />

@@ -178,7 +178,7 @@ const Dashboard = () => {
         </div>
       </nav>
       <div className="page-wrapper-sub flex flex-col w-full">
-        <header className={`sticky top-0 z-[1] bg-white ${isScrolled ? 'border-b' : ''}`}>
+        <header className={`sticky top-0 z-[1] bg-white ${isScrolled ? 'border-b' : ''}`} style={{display: 'none'}}>
           <nav className="dark:border-gray-700 rounded-none bg-transparent dark:bg-transparent py-3 md:px-8 px-4 flex justify-between items-center h-[72px]">
             <Hamburger onClick={toggleSidebar} iconClr="#294245" className="w-[20px] h-[20px] cursor-pointer" />
             {isLoggedIn && (
