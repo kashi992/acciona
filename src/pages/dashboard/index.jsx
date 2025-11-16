@@ -159,7 +159,7 @@ const Dashboard = () => {
         className={`h-full fixed menuSidebar bg-white z-[2] shadow-md ${isSidebarOpen ? "open" : ""}`}>
         <CrossIcon onClick={() => setIsSidebarOpen(false)} className={`w-[30px] h-[30px] cursor-pointer absolute right-[10px] top-[10px]`} iconClr="#294245" />
         <div className="bg-white dark:bg-transparent rounded-none">
-          <h2 className="px-6 py-4 flex items-center sidebarlogo font-bold h-[72px]" style={{paddingLeft: "24px"}}>Acciona Solutions</h2>
+          <h2 className="px-6 py-4 flex items-center sidebarlogo font-bold h-[72px]" style={{paddingLeft: "24px"}}>Northway</h2>
           <div className="h-[calc(100vh_-_0px)] simplebar-scrollable-y">
             <nav
               className="mt-6 sidebar-nav list-none px-5 flex flex-col gap-4">
