@@ -41,11 +41,11 @@ const LoginForm = () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(visitorData),
           })
-          .then(res => res.json())
-          .then(console.log) // Optional: log response
-          .catch(err => console.error("trackVisitor error", err));
+            .then(res => res.json())
+            .then(console.log) // Optional: log response
+            .catch(err => console.error("trackVisitor error", err));
         });
-        navigate("/home");
+      navigate("/home");
     } else if (
       activeTab === "admin" &&
       credentials.username === correctAdminUsername &&
@@ -87,8 +87,9 @@ const LoginForm = () => {
     <div className="login-container">
       <form className="login-form" onSubmit={handleLogin}>
         {/* <h2 className="font-bold">User Login</h2> */}
-         <div className="tabButtons grid grid-cols-2 mb-4">
+        <div className="tabButtons grid grid-cols-2 mb-4">
           <button
+            type="button"  // ✅ prevents form submit on Enter
             className={`tabItem ${activeTab === "user" ? "active" : ""}`}
             onClick={() => {
               setActiveTab("user");
@@ -99,6 +100,7 @@ const LoginForm = () => {
             User
           </button>
           <button
+            type="button"  // ✅ prevents form submit on Enter
             className={`tabItem ${activeTab === "admin" ? "active" : ""}`}
             onClick={() => {
               setActiveTab("admin");
@@ -109,11 +111,9 @@ const LoginForm = () => {
             Admin
           </button>
         </div>
-        <h2 className="mb-5 mt-3">{activeTab === "admin" ? "Admin Login" : "User Login"}</h2>
-        {/* <p>
-          We believe in delivering Everyday Extraordinary - a solution that brings the
-          'extra' and improves the lives of everyday people - every single day.
-        </p> */}
+        <h2 className="mb-5 mt-3">
+          {activeTab === "admin" ? "Admin Login" : "User Login"}
+        </h2>
         <input
           type="text"
           placeholder="Username"
