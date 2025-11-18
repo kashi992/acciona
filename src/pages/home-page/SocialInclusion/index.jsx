@@ -116,7 +116,8 @@ const hasTrackedRef = useRef(false);
                     <h2 className="VideoTitle">
                    Fly-through
                     </h2>
-                    <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]">
+                    <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px] mt-1">
+                        This is for illustrative and indicative purposes only
                     </p>
                 </div>
             )}

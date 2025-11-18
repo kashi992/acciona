@@ -214,8 +214,8 @@ function ConstructionMethodology() {
           </div>
 
           <h2 className="VideoTitle">Construction Methodology</h2>
-          <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]">
-            {/* Optional description */}
+          <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px] mt-1">
+         This is for illustrative and indicative purposes only
           </p>
         </div>
       )}
