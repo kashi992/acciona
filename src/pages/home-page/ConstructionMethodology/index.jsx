@@ -20,7 +20,7 @@ function ConstructionMethodology() {
     () => [
       {
         id: "ConMethVideo",
-        src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_20251113.mp4",
+        src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_20251119.mp4",
         poster:
           "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
         thumb:
