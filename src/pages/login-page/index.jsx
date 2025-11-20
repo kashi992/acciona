@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const LoginForm = () => {
   const [credentials, setCredentials] = useState({ username: "", password: "" });
   const [activeTab, setActiveTab] = useState("user");
   const [error, setError] = useState("");
+  const [capVal, setCapVal] = useState(null);
   const navigate = useNavigate();
 
   // Credentials
@@ -132,7 +134,11 @@ const LoginForm = () => {
           }
           required
         />
-        <button className="" type="submit">Login</button>
+        <ReCAPTCHA className="mb-[15px]"
+          sitekey="6LfGDhMsAAAAAIxboTBqNandn9KjI2fmwPtHl03T"
+          onChange={(value) => setCapVal(value)}
+        />
+        <button className={`${capVal ? "" : "opacity-80"}`} type="submit" disabled={!capVal} style={capVal ? {cursor: "pointer"} : {cursor: "not-allowed"}}>Login</button>
         {error && <p className="error-message">{error}</p>}
       </form>
     </div>

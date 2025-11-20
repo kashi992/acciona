@@ -31,7 +31,7 @@
   border-radius: 5px;
   height: 55px;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .login-form input::placeholder {
   font-size: inherit;
@@ -90,7 +90,7 @@ color: #fff;
 }
 @media screen and (max-width: 1370px) {
   .login-form input {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
   .login-form input {
     height: 50px;
@@ -121,7 +121,6 @@ color: #fff;
   }
   .login-form input {
     font-size: 15px;
-    margin-bottom: 15px;
   }
   .login-form p {
     font-size: 14px;
