@@ -19,45 +19,45 @@ function ConstructionMethodology() {
   const videos = useMemo(
     () => [
       {
-        id: "ConMethVideo",
+        id: "ConstructionSequenceVideo",
         src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_20251119.mp4",
         poster:
           "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
         thumb:
           "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
-        alt: "Thumbnail Methodology 1",
+        alt: "Thumbnail Construction Sequence 1",
         thumbTitle: "Hoteo Bridge",
       },
       // {
-      //   id: "ConMethVideo2",
+      //   id: "ConstructionSequenceVideo2",
       //   src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
       //   poster:
       //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
       //   thumb:
       //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-      //   alt: "Thumbnail Methodology 2",
+      //   alt: "Thumbnail Construction Sequence 2",
       //         thumbTitle: "Bridge 1",
       // },
       // {
-      //   id: "ConMethVideo3",
+      //   id: "ConstructionSequenceVideo3",
       //   // TODO: replace with your real file
       //   src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
       //   poster:
       //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
       //   thumb:
       //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-      //   alt: "Thumbnail Methodology 3",
+      //   alt: "Thumbnail Construction Sequence 3",
       //   thumbTitle: "Bridge 2",
       // },
       // {
-      //   id: "ConMethVideo4",
+      //   id: "ConstructionSequenceVideo4",
       //   // TODO: replace with your real file
       //   src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",
       //   poster:
       //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
       //   thumb:
       //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg",
-      //   alt: "Thumbnail Methodology 4",
+      //   alt: "Thumbnail Construction Sequence 4",
       //   thumbTitle: "Bridge 3",
       // },
     ],
@@ -133,7 +133,7 @@ function ConstructionMethodology() {
 
       {viewState === "thumbnail" && (
         <div className="thumbnailsView h-full relative flex flex-col justify-center container">
-          <h2 className="thumbTitle min-[1570px]:pb-4">Construction Methodology</h2>
+          <h2 className="thumbTitle min-[1570px]:pb-4">Construction Sequence</h2>
 
           {/* 2x2 grid of thumbnails */}
           <div
@@ -213,7 +213,7 @@ function ConstructionMethodology() {
             </button>
           </div>
 
-          <h2 className="VideoTitle">Construction Methodology</h2>
+          <h2 className="VideoTitle">Construction Sequence</h2>
           <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px] mt-1">
          This is for illustrative and indicative purposes only
           </p>

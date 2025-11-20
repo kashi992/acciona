@@ -15,23 +15,25 @@ const HeroSlider = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const swiperRef = useRef(null);
-   const prevRef  = useRef(null);
-  const nextRef  = useRef(null);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const slides = [
     {
       id: 1,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/theVision-n.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/theVision-n.png",
-      title: "The Vision",
-        path: "/the-vision",
- disabled: true,
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Delivering.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Delivering.png",
+      title: "Looking Forward",
+      description: "The Vision",
+      path: "/the-vision",
+      disabled: true,
     },
     {
       id: 2,
       image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/flyThrough-n.png",
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/flyThrough-n.png",
-      title: "Fly Through",
+      title: "Better Connections",
+      description: "Fly through",
       path: "/fly-through",
       disabled: false,
     },
@@ -39,30 +41,32 @@ const HeroSlider = () => {
       id: 3,
       image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/constructionSequence-n.png",
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/constructionSequence-n.png",
-      title: "4D Construction Sequence",
+      title: "Higher Standards",
+      description: "4D Construction Sequence",
       path: "/construction-sequence",
       disabled: false,
     },
     {
       id: 4,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/socialProcurement-n.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/socialProcurement-n.png",
-      title: "Social Procurement",
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Long_Term.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Long_Term.png",
+      title: "Brighter Futures",
+      description: "Social Procurement and Community Engagement",
       path: "/social-procurement",
       disabled: true,
     },
-    {
-      id: 5,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/community.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/community.png",
-      title: "Community Engagement",
-      path: "/community",
-      disabled: true,
-    },
+    // {
+    //   id: 5,
+    //   image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/community.png",
+    //   imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/community.png",
+    //   title: "Community Engagement",
+    //   path: "/community",
+    //   disabled: true,
+    // },
     {
       id: 6,
-      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/pdfIcon.png",
-      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/pdfIcon.png",
+      image: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Roll_Plot.png",
+      imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Roll_Plot.png",
       title: "Roll Plot",
       path: "/roll-plot",
       disabled: false,
@@ -97,11 +101,11 @@ const HeroSlider = () => {
     // },
   ];
 
-   const handleSlideClick = (slide, index) => {
+  const handleSlideClick = (slide, index) => {
     if (slide.disabled) {
       // Show modal for disabled slides
       setIsModalOpen(true);
-       return;
+      return;
     }
     // else if (slide.id === 6) {
     //  window.open(slide.path, "_blank", "noopener,noreferrer");
@@ -132,15 +136,15 @@ const HeroSlider = () => {
             centeredSlides={false}
             slidesPerView={5}
             slidesPerGroup={1}
-            spaceBetween={80}
+            spaceBetween={60}
             loop={false}
             pagination={true}
-           navigation={{
+            navigation={{
               // these get overwritten by onBeforeInit
               prevEl: prevRef.current,
               nextEl: nextRef.current,
             }}
-               onBeforeInit={(swiper) => {
+            onBeforeInit={(swiper) => {
               // swap out the default selectors for your refs
               swiper.params.navigation.prevEl = prevRef.current;
               swiper.params.navigation.nextEl = nextRef.current;
@@ -168,35 +172,36 @@ const HeroSlider = () => {
               },
               // when window width is <= 999px
               1200: {
-                spaceBetween: 80,
-          slidesPerGroup: 1,
+                spaceBetween: 60,
+                slidesPerGroup: 1,
               },
               1680: {
                 slidesPerView: 5,
-                spaceBetween: 80,
-             slidesPerGroup: 1,
+                spaceBetween: 60,
+                slidesPerGroup: 1,
               },
               1920: {
                 slidesPerView: 5,
-                spaceBetween: 80,
-              slidesPerGroup: 1,
+                spaceBetween: 60,
+                slidesPerGroup: 1,
               },
             }}
           >
             {slides.map((slide, index) => (
               <SwiperSlide
                 key={slide.id}
-           onClick={() => handleSlideClick(slide, index)}
-                // onClick={() =>
-                //   navigate(slide.path, { state: { fromSlideIndex: index } })
-                // }
+                onClick={() => handleSlideClick(slide, index)}
+              // onClick={() =>
+              //   navigate(slide.path, { state: { fromSlideIndex: index } })
+              // }
               >
                 <div className="sliderContent">
-                  <div className={`slideImg ${slide.disabled ? "greySlide" : ""} ${slide.id === 5 ? "icon-without-shadow" : ""} ${slide.id === 6 ? "icon-without-shadow p-[15px]" : ""}`}>
+                  <div className={`slideImg ${slide.disabled ? "greySlide" : ""} ${slide.id === 5 ? "icon-without-shadow" : ""}`}>
                     <img className="slideImgN" src={slide.image} alt={`Slide ${slide.id}`} />
                     <img className="slideImgR" src={slide.imageR} alt={`Slide ${slide.id}`} />
                   </div>
-                  <h2 className="sf">{slide.title}</h2>
+                  <h2 className="sf text-start font-semibold">{slide.title}</h2>
+                  <p className="sf -mt-[12px] text-start font-medium">{slide.description}</p>
                 </div>
               </SwiperSlide>
             ))}
@@ -212,27 +217,27 @@ const HeroSlider = () => {
         </div>
 
         <Modal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        title="Content Not Available"
-      >
-        <div className="text-center">
-          <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-[#074d44] mb-4">
-            <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          title="Content Not Available"
+        >
+          <div className="text-center">
+            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-[#074d44] mb-4">
+              <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p className="text-gray-600">
+              This video isn't available until the 28th November
+            </p>
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="mt-4 px-4 py-2 bg-[#074d44] text-white rounded hover:bg-black transition-colors"
+            >
+              OK
+            </button>
           </div>
-          <p className="text-gray-600">
-            This video isn't available until the 28th November
-          </p>
-          <button
-            onClick={() => setIsModalOpen(false)}
-            className="mt-4 px-4 py-2 bg-[#074d44] text-white rounded hover:bg-black transition-colors"
-          >
-            OK
-          </button>
-        </div>
-      </Modal>
+        </Modal>
       </div>
     </section>
   );

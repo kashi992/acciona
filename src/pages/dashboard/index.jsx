@@ -16,6 +16,7 @@ import CrossIcon from "../../assets/images/CrossIcon.jsx";
 
 const Dashboard = () => {
   const [visitorCount, setVisitorCount] = useState(0);
+  const [totalVisitorCount, setTotalVisitorCount] = useState(0);
   const [visitorLogs, setVisitorLogs] = useState([]);
   const [error, setError] = useState(null); // Error state for handling fetch errors
   const [stats, setStats] = useState([]);
@@ -44,7 +45,8 @@ const Dashboard = () => {
     fetch("https://yhqeotl54j.execute-api.us-east-1.amazonaws.com/prod/getVisitors")
       .then(res => res.json())
       .then(data => {
-        setVisitorCount(data.count);
+        setVisitorCount(data.uniqueCount);
+        setTotalVisitorCount(data.totalVisits);
         setVisitorLogs(data.logs);
       })
       .catch(err => {
@@ -199,9 +201,10 @@ const Dashboard = () => {
                   <div className="bg-[#16CDC740] text-secondary md:p-3 p-2 rounded-md">
                     <UsersIcon className="w-[24px] h-[24px]" iconClr="#16CDC7" />
                   </div>
-                  <h4 className="sf xl:xl:text-[26px] md:text-[22px] text-[16px] font-semibold">Total Unique Visitors</h4>
+                  <h4 className="sf xl:xl:text-[26px] md:text-[22px] text-[16px] font-semibold">Visitors Analytics</h4>
                 </div>
-                <h1 className="sf xl:text-[50px] md:text-[36px] text-[26px] md:w-fit w-full font-bold text-center">{visitorCount}</h1>
+                <h1 className="sf xl:text-[40px] md:text-[32px] text-[26px] xl:my-2 my-3 font-bold "><span>Unique visitors:</span>  {visitorCount}</h1>
+                <h1 className="sf xl:text-[40px] md:text-[32px] text-[26px] xl:mt-0 mt-3 font-bold"><span>Total visits:</span>  {totalVisitorCount}</h1>
               </div>
               <div className="bg-white rounded-xl shadow-md md:py-6 py-4 md:px-8 px-4 w-full">
                 <div className="flex items-center md:gap-4 gap-3">
@@ -211,7 +214,7 @@ const Dashboard = () => {
                   <h4 className="sf xl:text-[26px] md:text-[22px] text-[16px] font-semibold">Top Performing Video (By Clicks): {mostClickedVideo?.videoId || "N/A"}
                   </h4>
                 </div>
-                <h1 className="sf xl:text-[50px] md:text-[36px] text-[26px] xl:mt-0 mt-3 font-bold text-center flex xl:justify-center items-center gap-3 md:justify-start justify-center"> <span className="text-[70%]">Total Clicks:</span>   {mostClickedVideo?.totalClicks || 0}</h1>
+                <h1 className="sf xl:text-[50px] md:text-[36px] text-[26px] xl:mt-0 mt-3 font-bold text-center flex items-center gap-3"> <span className="text-[70%]">Total Clicks:</span>   {mostClickedVideo?.totalClicks || 0}</h1>
               </div>
               <div className="bg-white rounded-xl shadow-md md:px-6 px-4 md:py-6 py-4">
                 <h2 className="sf xl:text-[26px] md:text-[22px] text-[16px] font-bold mb-6">First Interaction Per Video</h2>
