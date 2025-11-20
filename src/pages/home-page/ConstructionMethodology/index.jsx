@@ -18,16 +18,27 @@ function ConstructionMethodology() {
   // Central config for thumbnails/videos (easy to extend)
   const videos = useMemo(
     () => [
+
       {
         id: "ConstructionSequenceVideo",
         src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_20251119.mp4",
         poster:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
+          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb_V2.png",
         thumb:
-          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
+          "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb_V2.png",
         alt: "Thumbnail Construction Sequence 1",
         thumbTitle: "Hoteo Bridge",
       },
+      // {
+      //   id: "ConstructionSequenceVideo",
+      //   src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/WarkWorth_to_TeHana_Final_20251119.mp4",
+      //   poster:
+      //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
+      //   thumb:
+      //     "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Hoteo_Bridge_Timeline_thumb.jpg",
+      //   alt: "Thumbnail Construction Sequence 1",
+      //   thumbTitle: "Hoteo Bridge",
+      // },
       // {
       //   id: "ConstructionSequenceVideo2",
       //   src: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4",

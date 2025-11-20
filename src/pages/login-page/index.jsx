@@ -84,6 +84,14 @@ const LoginForm = () => {
     setError("");
   }, []);
 
+//   useEffect(() => {
+//   // Auto-validate captcha on localhost
+//   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+//     setCapVal(true);
+//   }
+// }, []);
+
+
 
   return (
     <div className="login-container">
@@ -134,6 +142,7 @@ const LoginForm = () => {
           }
           required
         />
+        
         <ReCAPTCHA className="mb-[15px]"
           sitekey="6LfGDhMsAAAAAIxboTBqNandn9KjI2fmwPtHl03T"
           onChange={(value) => setCapVal(value)}
