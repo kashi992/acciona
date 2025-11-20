@@ -12,7 +12,7 @@ const LoginForm = () => {
   const correctAdminUsername = "Northway";
   const correctAdminPassword = "lucid3DG3";
   const correctUsername = "Northway";
-  const correctPassword = "W2THnorthway";
+  const correctPassword = "W2THNorthway";
 
   const handleLogin = (e) => {
     e.preventDefault();
