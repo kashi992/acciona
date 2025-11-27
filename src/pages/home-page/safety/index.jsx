@@ -43,7 +43,7 @@ const hasTrackedRef = useRef(false);
             {viewState === "thumbnail" && (
                 <div className="thumbnailsView h-full relative flex flex-col justify-center container">
                     <h2 className="thumbTitle">
-                      Our Finance Model
+                 Social Procurement and Community Engagement
                     </h2>
                     <div className="thumbnails grid relative grid-cols-1 items-center mx-auto">
                         {/* Thumbnail */}
@@ -53,8 +53,8 @@ const hasTrackedRef = useRef(false);
                         >
                             <div className="relative mx-auto w-full">
                                 <img
-                                    src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg"
-                                    alt="Thumbnail Safety"
+                                    src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/SI_SE_COMBINED_02_ONLINE_R02_Thumb.jpg"
+                                    alt="Thumbnail Social Procurement and Community Engagement"
                                     className="thumbnailImg w-full md:h-[350px] h-[200px] object-cover"
                                 />
                                 <img
@@ -85,9 +85,9 @@ const hasTrackedRef = useRef(false);
                         <video
                         ref={videoRef}
                             className="w-full h-full custom-video-player"
-                            src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/COFFS_AERIAL_01_scale_2x_amq-13+(1).mp4"
+                            src="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/SI_SE_COMBINED_02_ONLINE_R02.mp4"
                             controls
-                            poster="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/video-capture-t0002.47seg-8318_11zon.jpg"
+                            poster="https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/SI_SE_COMBINED_02_ONLINE_R02_Thumb.jpg"
                         />
                         {!isPlaying && (
                             <div className={`absolute top-0 right-0 left-0 bottom-0 h-ull w-full flex flex-col`} onClick={() => videoRef.current.play()}>
@@ -113,7 +113,7 @@ const hasTrackedRef = useRef(false);
 
                     {/* Video Title and Description */}
                     <h2 className="VideoTitle">
-                        Our Finance Model
+            Social Procurement and Community Engagement
                     </h2>
                     <p className="text-center text-white min-[1680px]:text-[20px] font-semibold text-[18px]">
                     </p>
