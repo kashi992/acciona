@@ -25,8 +25,8 @@ const HeroSlider = () => {
       imageR: "https://cpb-uglsolution-videos.s3-accelerate.amazonaws.com/acciona/Delivering.png",
       title: "Looking Forward",
       description: "The Vision",
-      path: "/the-vision",
-      disabled: true,
+      path: "/vision",
+      disabled: false,
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ const HeroSlider = () => {
       title: "Brighter Futures",
       description: "Social Procurement and Community Engagement",
       path: "/social-procurement",
-      disabled: true,
+      disabled: false,
     },
     // {
     //   id: 5,
