@@ -122,7 +122,7 @@ const LoginForm = () => {
           </button>
         </div>
         <h2 className="mb-5 mt-3">
-          {activeTab === "admin" ? "Admin Login" : "User Login1"}
+          {activeTab === "admin" ? "Admin Login" : "User Login"}
         </h2>
         <input
           type="text"
